@@ -20,7 +20,7 @@ body {
     float: right;
     list-style: none;
     margin: 12px 0 0 0;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 #navMenu ul {
@@ -42,7 +42,7 @@ body {
 @media screen and (max-width: 915px) {
     #navMenu li {
         margin: 8px 8px;
-        font-size: 18px;
+        font-size: 12px;
     }
 
     #navContainer {
@@ -53,7 +53,7 @@ body {
 @media screen and (max-width: 780px) {
     #navMenu li {
         margin: 5px 5px;
-        font-size: 15px;
+        font-size: 11px;
     }
 
     #easyTechLogo {
@@ -70,7 +70,7 @@ body {
 
     #navMenu li {
         margin: 5px 5px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -80,8 +80,17 @@ body {
         /* Aqui temos que cropar a imagem ou substituí-la */
     }
 
+    #navMenu {
+        float: none;
+        margin: 0;
+    }
+
+    #navMenu ul {
+        margin: 8px 8px;
+    }
+
     #navMenu li {
-        margin: 5px 5px;
+        margin: 5px 9px;
         font-size: 14px;
     }
 }
