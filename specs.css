@@ -1,5 +1,6 @@
 body {
     background-color: gainsboro;
+    font-family: 'Mukta', sans-serif;
 }
 
 
@@ -8,27 +9,22 @@ body {
     width: 100%;
 }
 
-.easyTechXBlueprintContainer {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    margin: 50px 0 100px 0;
-}
+
 
 .easyTechImage,
 .easyTechBlueprint {
-    width: 800px;
+    width: 900px;
     margin: auto;
 }
 
 .easyTechBlueprint img {
     position: relative;
-    width: 800px;
+    width: 900px;
 }
 
 .easyTechImage img {
     position: absolute;
-    width: 800px;
+    width: 900px;
 }
 
 .easyTechBlueprint img:hover {
@@ -39,25 +35,30 @@ body {
     transition: all ease 2s;
 }
 
-
-
-
-
 .specsText {
+    font-family: 'Quicksand', sans-serif;
     width: 60%;
     text-align: left;
     margin: 0 auto;
 }
 
 .specsText h1 {
-    font-family: font-family: 'Mukta', sans-serif;
+    font-family: 'Mukta', sans-serif;
     font-size: 20px;
-    margin: 25px 0 20px 0;
+    margin: 60px 0 25px 0;
 }
 
 .specsText p {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     line-height: 2.5em;
-    margin: 0 0 40px 15px;
+    margin: 15px 0 20px 0;
+}
+
+
+.easyTechXBlueprintContainer {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 100px 0 130px 0;
 }
