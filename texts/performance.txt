@@ -30,8 +30,7 @@ A lot of the other things in here are educational or hobbyist oriented
 you plan to use your Raspberry Pi 4 as a desktop system running a significant number of applications, 
 you should definitely get at least the 2GB model. The price difference is small, 
 and the performance benefit is large.
-I would say yes, the performance is good enough, 
-the configuration is flexible enough, and the price is certainly right.
+
 
 
 Hardware (You will need)
