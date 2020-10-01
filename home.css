@@ -12,15 +12,16 @@ body {
 
 #navContainer {
     overflow: hidden;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-bottom: 4px;
 }
 
 #navMenu {
     float: right;
     list-style: none;
     margin: 12px 0 0 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #navMenu ul {
@@ -28,18 +29,31 @@ body {
 }
 
 #navMenu li {
-    display: inline-flex;
+    display: inline-block;
     text-align: center;
     margin: 8px 15px;
 }
 
-#navMenu li a:hover {
-    /* por algum motivo não consegui fazer... deve ser cansaço.
-                        Achei um link com efeitos incríveis
-                        https: //codepen.io/maheshambure21/pen/QwXaRw */
+
+
+
+
+/* Reference: https: //codepen.io/maheshambure21/pen/QwXaRw */
+/* stroke */
+#navMenu li,
+#navMenu li:after,
+#navMenu li:before {
+    transition: all .2s;
+
 }
 
-@media screen and (max-width: 915px) {
+#navMenu li:hover {
+    text-shadow: 1px 1px 2px #9d9d9d;
+}
+
+
+
+*/ @media screen and (max-width: 915px) {
     #navMenu li {
         margin: 8px 8px;
         font-size: 12px;
@@ -53,7 +67,7 @@ body {
 @media screen and (max-width: 780px) {
     #navMenu li {
         margin: 5px 5px;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     #easyTechLogo {
@@ -70,7 +84,7 @@ body {
 
     #navMenu li {
         margin: 5px 5px;
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
