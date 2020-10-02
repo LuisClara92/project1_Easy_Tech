@@ -1,3 +1,6 @@
+https: //getflywheel.com/layout/card-layout-css-grid-layout-how-to/
+
+
 body {
     background-color: #fdfdfd;
     font-family: 'Mukta', sans-serif;
@@ -5,21 +8,14 @@ body {
 }
 
 
-.storeCardsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1;
-    grid-gap: 1rem;
-    width: 100%;
-}
+.storeCardsContainer {}
+
+.storeCards {}
+
+.card {}
 
 
-.storeCards {
-    width: 26%;
-    /* padding: 0 auto; */
-    margin: 0 auto;
-}
-
+.card img {}
 
 .storeCards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
