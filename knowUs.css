@@ -1,7 +1,18 @@
 body {
     display: grid;
     background-color: #fdfdfd;
-    font-family: 'Quicksand', sans-serif;;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13pt;
+    width: 60%;
+    margin: 10px auto;
+}
+h1{
+    font-family: 'Mukta', sans-ser;
+}
+h2{
+    position: relative;
+    font-family: 'Mukta', sans-ser;
+    text-align: center
 }
     /*style form*/
 form {
@@ -73,12 +84,17 @@ fieldset#gender {
 }
 fieldset#userSign {
     background: url(./images/icone-contato.png) no-repeat 95% 95%;
+    margin-top: 0;
 }
 fieldset#userLog {
     background: url(./images/icone-contato2.png) no-repeat 95% 95%;
+    margin-top: 0;
+
 }
 fieldset#message {
     background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
+    margin-top: 0;
+
 }
  
 
