@@ -1,1 +1,2 @@
-# project1_Easy_Tech
+REF:
+https: //getflywheel.com/layout/card-layout-css-grid-layout-how-to/
