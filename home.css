@@ -1,0 +1,110 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+#easyTechLogo {
+    float: left;
+    width: 160px;
+    margin: 15px 0 0 30px;
+}
+
+#navContainer {
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+#navMenu {
+    float: right;
+    list-style: none;
+    margin: 12px 0 0 0;
+    font-size: 14px;
+}
+
+#navMenu ul {
+    margin: 8px 25px;
+}
+
+#navMenu li {
+    display: inline-block;
+    text-align: center;
+    margin: 8px 15px;
+}
+
+
+
+
+
+/* Reference: https: //codepen.io/maheshambure21/pen/QwXaRw */
+/* stroke */
+#navMenu li,
+#navMenu li:after,
+#navMenu li:before {
+    transition: all .2s;
+
+}
+
+#navMenu li:hover {
+    text-shadow: 1px 1px 2px #9d9d9d;
+}
+
+
+
+*/ @media screen and (max-width: 915px) {
+    #navMenu li {
+        margin: 8px 8px;
+        font-size: 12px;
+    }
+
+    #navContainer {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #navMenu li {
+        margin: 5px 5px;
+        font-size: 12px;
+    }
+
+    #easyTechLogo {
+        width: 140px;
+        margin: 15px 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #easyTechLogo {
+        width: 120px;
+        margin: 15px 0 0 30px;
+    }
+
+    #navMenu li {
+        margin: 5px 5px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    #easyTechLogo {
+        display: none;
+        /* Aqui temos que cropar a imagem ou substituí-la */
+    }
+
+    #navMenu {
+        float: none;
+        margin: 0;
+    }
+
+    #navMenu ul {
+        margin: 8px 8px;
+    }
+
+    #navMenu li {
+        margin: 5px 9px;
+        font-size: 14px;
+    }
+}
