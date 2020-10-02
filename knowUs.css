@@ -16,9 +16,11 @@ input, textarea {
     background-color: rgba(255, 255, 255, .8);
     margin-left: 20px;
 }
+    /*insert hover effect in select area*/
 input:hover, textarea:hover {
     background-color: #dddddd;
 }
+    /*style legend*/
 legend {
     color: #888888;
     font-weight: bold;
@@ -30,6 +32,7 @@ legend {
     overflow: hidden;
     width: 22.1%;
     border: 1px solid #cecece;
+    margin-bottom: 10px;
 }
     /* Style the buttons inside the tab */
 .tab button {
@@ -51,15 +54,14 @@ legend {
   
     /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #cecece;
 }
   
     /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+
 }
     /* Style the fieldset */
 fieldset {
@@ -69,8 +71,11 @@ fieldset {
 fieldset#gender {
     width: 150px;
 }
-fieldset#user {
+fieldset#userSign {
     background: url(./images/icone-contato.png) no-repeat 95% 95%;
+}
+fieldset#userLog {
+    background: url(./images/icone-contato2.png) no-repeat 95% 95%;
 }
 fieldset#message {
     background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
