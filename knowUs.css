@@ -1,0 +1,83 @@
+body {
+    display: grid;
+    background-color: #fdfdfd;
+    font-family: 'Quicksand', sans-serif;;
+}
+    /*style form*/
+form {
+    width: 750px;
+    margin: auto;
+}
+    /*style form*/
+input, textarea {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .8);
+    margin-left: 20px;
+}
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: "Quicksand", sans-serif;
+}
+    /* Style the tab */
+.tab {
+    overflow: hidden;
+    width: 22.1%;
+    border: 1px solid #cecece;
+}
+    /* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    border-left: 1px solid #cecece;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+    /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+    /* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+  
+    /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+    /* Style the fieldset */
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#gender {
+    width: 150px;
+}
+fieldset#user {
+    background: url(./images/icone-contato.png) no-repeat 95% 95%;
+}
+fieldset#message {
+    background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
+}
+ 
+
+#navReference,
+#footerReference {
+    width: 100%;
+}
