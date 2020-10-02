@@ -1,0 +1,44 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* Float four columns side by side */
+.storeCards {
+    float: left;
+    width: 26%;
+    padding: 0 10px;
+    margin: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.storeCardsContainer {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.storeCardsContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .storeCards {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.storeCards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
