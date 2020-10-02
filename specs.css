@@ -1,0 +1,162 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+#navReference,
+#footerReference {
+    width: 100%;
+}
+
+
+.specsText {
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.specsText h1 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    margin: 60px 0 25px 0;
+}
+
+.specsText p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    line-height: 2.5em;
+    margin: 15px 0 20px 0;
+}
+
+
+.easyTechXBlueprintContainer {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 100px 0 130px 0;
+}
+
+
+.easyTechImage,
+.easyTechBlueprint {
+    width: 900px;
+    margin: auto;
+}
+
+.easyTechBlueprint img {
+    position: relative;
+    width: 900px;
+}
+
+.easyTechImage img {
+    position: absolute;
+    width: 900px;
+}
+
+.easyTechBlueprint img:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease 2s;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .specsText {
+        width: 70%;
+    }
+
+    .specsText h1 {
+        font-size: 20px;
+        margin: 60px 0 25px 0;
+    }
+
+    .specsText p {
+        font-size: 15px;
+        line-height: 2.5em;
+        margin: 15px 0 20px 0;
+    }
+
+    .easyTechImage,
+    .easyTechBlueprint {
+        width: 700px;
+        margin: auto;
+    }
+
+    .easyTechBlueprint img {
+        width: 700px;
+    }
+
+    .easyTechImage img {
+        width: 700px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .specsText {
+        width: 90%;
+    }
+
+    .specsText h1 {
+        font-size: 18px;
+        margin: 60px 0 25px 0;
+    }
+
+    .specsText p {
+        font-size: 14px;
+        line-height: 2.5em;
+        margin: 15px 0 20px 0;
+    }
+
+    .easyTechImage,
+    .easyTechBlueprint {
+        width: 600px;
+        margin: auto;
+    }
+
+    .easyTechBlueprint img {
+        width: 600px;
+    }
+
+    .easyTechImage img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .specsText {
+        width: 90%;
+    }
+
+    .specsText h1 {
+        font-size: 17x;
+        margin: 60px 0 25px 0;
+    }
+
+    .specsText p {
+        font-size: 13px;
+        line-height: 2.5em;
+        margin: 15px 0 20px 0;
+    }
+
+    .easyTechImage,
+    .easyTechBlueprint {
+        width: 600px;
+        margin: auto;
+    }
+
+    .easyTechBlueprint img {
+        width: 600px;
+    }
+
+    .easyTechImage img {
+        width: 600px;
+    }
+}
