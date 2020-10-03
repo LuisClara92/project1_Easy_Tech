@@ -108,20 +108,25 @@ body {
 .storeCards {
     margin: 0 auto;
     width: 350px;
+    border-radius: 2%;
     background-color: #f1f1f1;
     text-align: center;
     padding: 16px;
     box-shadow: 0 4px 8px 0 #00000033;
 }
 
+
+
+
 .card img {
     object-fit: cover;
     width: 350px;
     height: 400px;
+    border-radius: 2%;
+
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px 0 #00000080;
 }
-
 
 
 
@@ -151,7 +156,18 @@ body {
 }
 
 
-
 .logoElement {
     width: 30px;
+}
+
+
+
+.storeCards:hover {
+    border: solid 2px #d8d8d8;
+    box-shadow: 2px 8px 16px 0 #00000033;
+}
+
+.card img:hover {
+    border-radius: 3%;
+    box-shadow: 2px 2px 10px 0 #00000080;
 }
