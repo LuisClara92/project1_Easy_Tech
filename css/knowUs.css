@@ -156,18 +156,18 @@ fieldset#gender {
 }
 fieldset#userSign {
     border: none;
-    background: url(./images/icone-contato.png) no-repeat 95% 95%;
+    background: url(../images/icone-contato.png) no-repeat 95% 95%;
     margin: 0;
     margin-top: 20px;
 }
 fieldset#userLog {
     border: none;
-    background: url(./images/icone-contato2.png) no-repeat 95% 95%;
+    background: url(../images/icone-contato2.png) no-repeat 95% 95%;
     height: 140px;
 }
 fieldset#message {
     border: none;
-    background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
+    background: url(../images/icone-mensagem.png) no-repeat 95% 95%;
     margin-top: 10px;
     margin-left: 32px;
     margin-bottom: 0px;
