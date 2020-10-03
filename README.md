@@ -4,6 +4,11 @@ How TO - Top Navigat Barion
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav
 
 
+ **Features já conectadas a esta branch**
+ *Nav bar*
+ *Specs*
+ *KnowUs*
+
 Fontes já conectadas:
 
     font-family: 'Mukta', sans-serif;
