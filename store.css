@@ -8,8 +8,7 @@ body {
 
 
 
-
-/* NAV // TEMPORARY // */
+/* *********************************************  NAV // TEMPORARY // *********************************************  */
 #navReference,
 #footerReference {
     width: 100%;
@@ -20,7 +19,7 @@ body {
 
 
 
-/* Page Header */
+/* ********************************************* Page Header *********************************************  */
 .storeTitle {
     font-family: 'Mukta', sans-serif;
     font-size: 22px;
@@ -34,7 +33,7 @@ body {
 
 
 
-/* Text header */
+/* ********************************************* Text header *********************************************  */
 .storeTextHead {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
@@ -50,7 +49,7 @@ body {
 
 
 
-/* Text Bellow Head */
+/* ********************************************* Text Bellow Head *********************************************  */
 
 .contentBellowHead {
     display: grid;
@@ -80,7 +79,7 @@ body {
 
 
 
-/* Text Above Cards */
+/* ********************************************* Text Above Cards *********************************************   */
 
 .titleAboveCards {
     width: 80%;
@@ -95,7 +94,8 @@ body {
 
 
 
-/* CARDS */
+/* ********************************************* CARDS ********************************************* */
+
 
 .storeCardsContainer {
     display: grid;
@@ -105,6 +105,8 @@ body {
     margin: 60px 170px 180px 170px;
 }
 
+
+
 .storeCards {
     margin: 0 auto;
     width: 350px;
@@ -113,6 +115,10 @@ body {
     text-align: center;
     padding: 16px;
     box-shadow: 0 4px 8px 0 #00000033;
+
+    /* will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out; */
 }
 
 
@@ -132,6 +138,7 @@ body {
 
 .card h3 {
     font-family: 'Mukta', sans-serif;
+    color: #444;
     font-size: 27px;
     letter-spacing: 0.5px;
     font-weight: 600;
@@ -162,12 +169,37 @@ body {
 
 
 
+
+
+/* ********************************************* HOVER ********************************************* */
+/* I wanted to make everytnhing bellow react on hover when the card is hovered */
+
 .storeCards:hover {
     border: solid 2px #d8d8d8;
     box-shadow: 2px 8px 16px 0 #00000033;
+    cursor: pointer;
+
+    transform: translateY(-5%);
+    will-change: transform;
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+
+
 }
 
-.card img:hover {
-    border-radius: 3%;
+.storeCards:hover .card img {
     box-shadow: 2px 2px 10px 0 #00000080;
+    filter: brightness(1.2) saturate(1.2) contrast(1.2) hue-rotate(-30deg);
 }
+
+.storeCards:hover .card .price:hover {
+    color: #587600;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 2rem;
+    transform: rotate(10deg);
+    transition: all 0.65s;
+}
+
+
+
+/* ********************************************* MEDIA QUERIES ********************************************* */
