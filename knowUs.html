@@ -18,8 +18,12 @@
     <h1>Know Us</h1>
 
     <h2>About Us</h2>
-
-    <h3>Think Big, Start Small</h3>
+    <div class="containerH3">
+        <h3 id="contentThink">Think&nbsp</h3><p> </p>
+        <h3 id="contentBig">Big,</h3>
+        <h3 id="contentStart">&nbspStart&nbsp</h3>
+        <h3 id="contentSmall">Small</h3>
+    </div>
     
     <div id="content">
         <p>We began by solving our own pain points. It’s always best to become an expert in an area, find a pain point and go after it because we have a better idea of where to go.</p>
@@ -44,7 +48,7 @@
         <!--simple form + Send Button + popup with receive msg-->
     <h2 id="contact">Contact Us</h2>
 
-        <form method="POST" id="fContact" action="mailto: easytech@gmail.com">
+        <form method="POST" id="contactForm" action="mailto: easytech@gmail.com">
 
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
@@ -74,10 +78,11 @@
                  
             <fieldset id="message" ><legend>User Message</legend>
                 <p><label for="cSubject">Subject</label><input type="text" name="tSubject" id="cSubject" size="30" maxlength="20" placeholder="Subject"></p>
-                <p><label for="cMsg"></label> <textarea name="tMsg" id="cMsg" cols="43" rows="5" placeholder="Your Message" ></textarea></p>
+                <p><label for="cMsg"></label> <textarea name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Your Message" ></textarea></p>
             </fieldset>
+            <button type="submit" value="submit" class="btn" id="btnMessage" onClick="contact( )" >Send Message</button>
         </form>
-        <button type="button" class="btn" id="btnMessage">Send Message</button>
+        
 
     <img id="footerReference" src="./images/navReference.jpg" alt="toBeReplaced">
     <script src="knowUs.js"></script>

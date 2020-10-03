@@ -2,7 +2,9 @@ body {
     display: grid;
     background-color: #fdfdfd;
     font-family: 'Quicksand', sans-serif;
-    font-size: 13pt;
+    line-height: 2rem;
+    font-size: 16px;
+    font-weight: 400;
     width: 60%;
     margin: 10px auto;
 }
@@ -10,10 +12,13 @@ h1{
     font-family: 'Mukta', sans-ser;
     border-bottom: 1px solid #000000;
     /* margin-left: 32px; */
+    margin-top: 50px;
+    font-size: 30pt;
 }
 h2{
     position: relative;
     font-family: 'Mukta', sans-ser;
+    font-size: 25pt;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -22,17 +27,39 @@ h3{
     font-family: 'Mukta', sans-ser;
     margin-top: 0;
 }
+.containerH3{
+    display: inline-flex;
+    line-height: 2rem;
+    font-size: 14pt;
+    font-weight: 400;
+}
+#contentThink{
+    font-size: 20pt;
+}
+#contentBig{
+    font-size: 30pt;
+}
+#contentStart{
+    font-size: 30pt;
+}
+#contentSmall{
+    font-size: 20pt;
+}
 #content{
     width: 75%;
     font-family: 'Quicksand', sans-serif;
-}
-#content p{
+    line-height: 2rem;
+    font-size: 16pt;
+    font-weight: 400;
     margin-bottom: 0;
     text-align: justify;
 }
+
 #contact{
     margin-top: 50px;
+    padding-top: 20px;
     border-top: 1px solid #000000;
+    margin-bottom:40px
 }
 
     /*style form*/
@@ -44,8 +71,7 @@ form {
 .tab {
     background-color: rgba(255, 255, 255, .8);
     overflow: hidden;
-    width: 22.17%;
-    border: 1px solid #cecece;
+    width: 22.1755%;
     margin-bottom: 10px;
 }
     /* Style the buttons inside the tab */
@@ -54,6 +80,7 @@ form {
     float: left;
     border: none;
     border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     outline: none;
     cursor: pointer;
     padding: 14px 14px;
@@ -77,15 +104,17 @@ form {
 legend {
     color: #888888;
     font-weight: bold;
-    font-size: 13pt;
-    font-family: "Quicksand", sans-serif;
+    font-family:"Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
     margin-top: 10px;
 }
     /*style form*/
 input, textarea {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    font-size: 13pt;
+    font-family:"Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2rem;
     background-color: rgba(255, 255, 255, .8);
     margin-top: 10px;
 }
@@ -123,7 +152,8 @@ fieldset#gender {
 fieldset#userSign {
     border: none;
     background: url(./images/icone-contato.png) no-repeat 95% 95%;
-    margin-top: 0;
+    margin: 0;
+    margin-top: 20px;
 }
 fieldset#userLog {
     border: none;
@@ -133,17 +163,19 @@ fieldset#userLog {
 fieldset#message {
     border: none;
     background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
-    margin-top: 0;
+    margin-top: 10px;
     margin-left: 32px;
     margin-bottom: 0px;
 }
 button.btn{
     display: block;
     height: 45px;
-    width:10%;
+    width: 20%;
     margin: 0px auto 30px auto;
     font-family:"Quicksand", sans-serif;
-    font-size: 12pt;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2rem;
     color: #ffffff;
     background-color: #cecece
 }
