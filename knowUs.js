@@ -20,4 +20,10 @@ function openTab(evt, options) {
 
   openTab(event, 'SignUp')
   
-  
+  const message = 'Thank you for submitting your message. Our crew will respond shortly.'
+
+  document.getElementById("fContact")
+  document.addEventListener("submit", function(event) {
+    event.preventDefault()
+    alert(message)
+  })

@@ -7,7 +7,8 @@
     <meta name="keywords" content="Wild Code School, About Us, Contact Us, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Us</title>
-    <link rel="stylesheet" href="./knowUs.css">
+    <link rel="stylesheet" href="knowUs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -15,27 +16,33 @@
     <!-- about us-->
         <!-- our story + Team Image-->
     <h1>Know Us</h1>
+
     <h2>About Us</h2>
-    <p>
+
+    <h3>Think Big, Start Small</h3>
+    
+    <div id="content">
+        <p>We began by solving our own pain points. It’s always best to become an expert in an area, find a pain point and go after it because we have a better idea of where to go.</p>
+
+        <p>The first step to our journey was a little different.</p> 
+
+        <p>To start Easy Tech, it required a lot of research to produce our first version of the easy tech. We spend a lot of hours and try outs with hardware and software.</p> 
+
+        <p>We placed 10,000€ on the back of our personals cards to start. This was money we didn’t have and also money we definitely didn’t want to waste.</p>
+
+        <p>In business, you need to be courageous. Don’t be that person who was too afraid to jump off the entrepreneurial cliff.</p> 
         
+        <p>If you are not scared, then your goals are not big enough. Reach for the sky and whenever you reach your goal, set another one bigger and bolder.</p>
 
-We began by solving our own pain points. It’s always best to become an expert in an area, find a pain point and go after it because we have a better idea of where to go.
+        <p>The best piece of advice to all young entrepreneurs out there, not just us, would be: Start earlier. It’s never too early.</p>
 
-The first step to our journey was a little different. 
-To start Easy Tech, it required a lot of research to produce our first version of the easy tech. We spend a lot of hours and try outs with hardware and software. 
-We placed 10,000€ on the back of our personals cards to start. This was money we didn’t have and also money we definitely didn’t want to waste. 
+        <p>We can give is to just get started. If we realized how much we would need to know before we started, we probably would have been too terrified to get going.</p>
 
-In business, you need to be courageous. Don’t be that person who was too afraid to jump off the entrepreneurial cliff. 
-If you are not scared, then your goals are not big enough. Reach for the sky and whenever you reach your goal, set another one bigger and bolder.
-
-The best piece of advice to all young entrepreneurs out there, not just us, would be: Start earlier. It’s never too early.
-
-We can give is to just get started. If we realized how much we would need to know before we started, we probably would have been too terrified to get going. 
-But We are a big believers of just-in-time learning, and we’ve learned a lot as Easy Tech grew, and we’ll continue to keep learning as we grow.
-    </p>
+        <p>But We are a big believers of just-in-time learning, and we’ve learned a lot as Easy Tech grew, and we’ll continue to keep learning as we grow.</p>
+    </div>  
     <!--contact us -->
         <!--simple form + Send Button + popup with receive msg-->
-    <h2>Contact Us</h2>
+    <h2 id="contact">Contact Us</h2>
 
         <form method="POST" id="fContact" action="mailto: easytech@gmail.com">
 
@@ -66,10 +73,11 @@ But We are a big believers of just-in-time learning, and we’ve learned a lot a
               </div>
                  
             <fieldset id="message" ><legend>User Message</legend>
-                <p><label for="cMsg"></label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Your Message" ></textarea></p>
+                <p><label for="cSubject">Subject</label><input type="text" name="tSubject" id="cSubject" size="30" maxlength="20" placeholder="Subject"></p>
+                <p><label for="cMsg"></label> <textarea name="tMsg" id="cMsg" cols="43" rows="5" placeholder="Your Message" ></textarea></p>
             </fieldset>
         </form>
-        <button type="button" class="btn btn-secondary">Send Message</button>
+        <button type="button" class="btn" id="btnMessage">Send Message</button>
 
     <img id="footerReference" src="./images/navReference.jpg" alt="toBeReplaced">
     <script src="knowUs.js"></script>

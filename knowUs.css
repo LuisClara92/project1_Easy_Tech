@@ -8,40 +8,43 @@ body {
 }
 h1{
     font-family: 'Mukta', sans-ser;
+    border-bottom: 1px solid #000000;
+    /* margin-left: 32px; */
 }
 h2{
     position: relative;
     font-family: 'Mukta', sans-ser;
-    text-align: center
+    text-align: center;
+    margin-bottom: 15px;
 }
+h3{
+    position: relative;
+    font-family: 'Mukta', sans-ser;
+    margin-top: 0;
+}
+#content{
+    width: 75%;
+    font-family: 'Quicksand', sans-serif;
+}
+#content p{
+    margin-bottom: 0;
+    text-align: justify;
+}
+#contact{
+    margin-top: 50px;
+    border-top: 1px solid #000000;
+}
+
     /*style form*/
 form {
     width: 750px;
     margin: auto;
 }
-    /*style form*/
-input, textarea {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    font-size: 13pt;
-    background-color: rgba(255, 255, 255, .8);
-    margin-left: 20px;
-}
-    /*insert hover effect in select area*/
-input:hover, textarea:hover {
-    background-color: #dddddd;
-}
-    /*style legend*/
-legend {
-    color: #888888;
-    font-weight: bold;
-    font-size: 13pt;
-    font-family: "Quicksand", sans-serif;
-}
     /* Style the tab */
 .tab {
+    background-color: rgba(255, 255, 255, .8);
     overflow: hidden;
-    width: 22.1%;
+    width: 22.17%;
     border: 1px solid #cecece;
     margin-bottom: 10px;
 }
@@ -57,22 +60,56 @@ legend {
     transition: 0.3s;
     font-size: 17px;
 }
-  
     /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
-  
     /* Create an active/current tablink class */
 .tab button.active {
     background-color: #cecece;
 }
-  
     /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-
+}
+    /*style legend*/
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 10px;
+}
+    /*style form*/
+input, textarea {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .8);
+    margin-top: 10px;
+}
+input{
+    /* width: 42%; */
+    margin-left: 10px;
+}
+    /*insert hover effect in select area*/
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+input#cName{
+    margin-left: 37.5px;
+    width: 45.6%;
+}
+input#cEmail{
+    margin-left: 43px;
+    width: 45.5%;
+}
+input#cPass{
+    width: 45.5%;
+}
+input#cSubject{
+    width: 48.5%;
 }
     /* Style the fieldset */
 fieldset {
@@ -80,23 +117,36 @@ fieldset {
     margin: 20px;
 }
 fieldset#gender {
+    border: none;
     width: 150px;
 }
 fieldset#userSign {
+    border: none;
     background: url(./images/icone-contato.png) no-repeat 95% 95%;
     margin-top: 0;
 }
 fieldset#userLog {
+    border: none;
     background: url(./images/icone-contato2.png) no-repeat 95% 95%;
-    margin-top: 0;
-
+    height: 140px;
 }
 fieldset#message {
+    border: none;
     background: url(./images/icone-mensagem.png) no-repeat 95% 95%;
     margin-top: 0;
-
+    margin-left: 32px;
+    margin-bottom: 0px;
 }
- 
+button.btn{
+    display: block;
+    height: 45px;
+    width:10%;
+    margin: 0px auto 30px auto;
+    font-family:"Quicksand", sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    background-color: #cecece
+}
 
 #navReference,
 #footerReference {
