@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Filipa, Leandro Baseggio,Luis Clara">
+    <meta name="description" content="WCS Project 1: HTML, CSS & JavaScript">
+    <meta name="keywords" content="Wild Code School, About Us, Contact Us, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Us</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/knowUs.css">
+    <link rel="icon" href="./images/EasyTech_logo.svg" type="image/svg" sizes="30x30">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="navContainer">
+        <div class="easyTechLogo">
+            <div class="EasyTechFlyingLogo">
+                <img src="/images/EasyTech_logo.svg" alt="Easy Tech Flying Logo" width="50px">
+            </div>
+            <img id="easyTechMoto" src="./images/EasyTech_logo_lateral_black_txtOnly.svg" alt="Easy Tech moto">
+        </div>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="#home"></a>Home</li>
+                <li><a href="#overview"></a>Overview</li>
+                <li><a href="#performance"></a>Performance</li>
+                <li><a href="#specs"></a>Specs</li>
+                <li><a href="#store"></a>Store</li>
+                <li>Know Us</li>
+            </ul>
+        </nav>
+    </section>
+    <!-- about us-->
+        <!-- our story + Team Image-->
+    <h1>Know Us</h1>
+
+    <h2>About Us</h2>
+    <div class="containerH3">
+        <h3 id="contentThink">Think&nbsp</h3><p> </p>
+        <h3 id="contentBig">Big,</h3>
+        <h3 id="contentStart">&nbspStart&nbsp</h3>
+        <h3 id="contentSmall">Small</h3>
+    </div>
+    
+    <div id="content">
+        <div>
+            <img id="easytechLogo"src="./images/EasyTech_logo.svg" alt="First Easy Tech Logo" ALIGN="right">
+        </div>
+        <p>We began by solving our own pain points. It’s always best to become an expert in an area, find a pain point and go after it because we have a better idea of where to go.</p>
+
+        <p>The first step to our journey was a little different.</p> 
+
+        <p>To start Easy Tech, it required a lot of research to produce our first version of the easy tech. We spend a lot of hours and try outs with hardware and software.</p> 
+
+        <p>We placed 10,000€ on the back of our personals cards to start. This was money we didn’t have and also money we definitely didn’t want to waste.</p>
+
+        <p>In business, you need to be courageous. Don’t be that person who was too afraid to jump off the entrepreneurial cliff.</p> 
+        
+        <p>If you are not scared, then your goals are not big enough. Reach for the sky and whenever you reach your goal, set another one bigger and bolder.</p>
+
+        <p>The best piece of advice to all young entrepreneurs out there, not just us, would be: Start earlier. It’s never too early.</p>
+
+        <p>We can give is to just get started. If we realized how much we would need to know before we started, we probably would have been too terrified to get going.</p>
+
+        <p>But We are a big believers of just-in-time learning, and we’ve learned a lot as Easy Tech grew, and we’ll continue to keep learning as we grow.</p>
+    </div>  
+    <!--contact us -->
+        <!--simple form + Send Button + popup with receive msg-->
+    <h2 id="contact">Contact Us</h2>
+
+        <form method="POST" id="contactForm" action="mailto: easytech@gmail.com">
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
+                <button class="tablinks" onclick="openTab(event, 'LogIn')">Log In</button>
+              </div>
+              
+              <div id="SignUp" class="tabcontent">
+                <fieldset id="userSign" ><legend> Sign Up</legend>
+                    <p><label for="cName" >Name:</label><input type="text" name="tName" id="cName" size="30" maxlength="50" placeholder="Name"></p>
+                    <p><label for="cEmail" >Email:</label><input type="email" name="tEmail" id="cEmail" size="30" maxlength="40" placeholder="Email"></p>
+                    <p><label for="cPass" >Password:</label><input type="password" name="tPass" id="cPass" size="27" maxlength="20" placeholder="min 8 characters"></p>
+                    <fieldset id="gender"><legend>Gender:</legend>
+                        <input type="radio" name="tSexo" id="cMasc" checked ><label for="cMasc" >Male</label><br>
+                        <input type="radio" name="tSexo" id="cFem"><label for="cFem" >Female</label>
+                    </fieldset>
+                    <p>Date of Birth:<input type="date" name="tNasc" id="cNasc" ></p>
+                </fieldset>
+              </div>
+              
+              <div id="LogIn" class="tabcontent">
+                <fieldset id="userLog" ><legend> Log In</legend>
+                    <p><label for="cName" >Log In:</label><input type="text" name="tName" id="cName" size="30" maxlength="50" placeholder="Name/ Email"></p>
+                    <p><label for="cPass" >Password:</label><input type="password" name="tPass" id="cPass" size="27" maxlength="20" placeholder="min 8 digit"></p>
+                </fieldset>
+                 
+              </div>
+                 
+            <fieldset id="message" ><legend>User Message</legend>
+                <p><label for="cSubject">Subject</label><input type="text" name="tSubject" id="cSubject" size="30" maxlength="20" placeholder="Subject"></p>
+                <p><label for="cMsg"></label> <textarea name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Your Message" ></textarea></p>
+            </fieldset>
+            <button type="submit" value="submit" class="btn" id="btnMessage" onClick="contact( )" >Send Message</button>
+        </form>
+        
+
+    <img id="footerReference" src="./images/navReference.jpg" alt="toBeReplaced">
+    <script src="./script/knowUs.js"></script>
+</body>
+</html>
