@@ -9,7 +9,12 @@ body {
 
 
 
-/* *********************************************  NAV // TEMPORARY // *********************************************  */
+
+
+
+
+
+/* ****************************************  INSET NAV CODE BELLOW ****************************************  */
 #navReference,
 #footerReference {
     width: 100%;
@@ -20,11 +25,32 @@ body {
 
 
 
+
+
+
+/* ****************************************  INSET NAV CODE ABOVE ****************************************  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ********************************************* Page Header *********************************************  */
 .storeTitle {
     font-family: 'Mukta', sans-serif;
-    font-size: 25px;
-    width: 80%;
+    font-size: 23px;
+    width: 65%;
     text-align: left;
     margin: 60px auto 60px auto;
     text-shadow: 1px 1px 1px #7b7b7b;
