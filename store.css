@@ -7,17 +7,78 @@ body {
 
 
 
+/* ****************************************  INSET FOOTER CODE BELLOW ****************************************  */
 
-
-
-
-
-
-
-/* ****************************************  INSET NAV CODE BELLOW ****************************************  */
-#navReference,
 #footerReference {
     width: 100%;
+}
+
+
+
+/* ****************************************  INSET NAV CODE ABOVE ****************************************  */
+
+.navContainer {
+    width: 75%;
+    overflow: hidden;
+    margin: auto auto;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.easyTechLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100px;
+    margin: 20px 30px 15px 30px;
+}
+
+#easyTechImage {
+    width: 50%;
+}
+
+#easyTechMoto {
+    width: 75%;
+    margin-left: 10px;
+}
+
+
+/* ********************************************* ANIMATED LOGO *********************************************   */
+
+.EasyTechFlyingLogo {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: EasyTechFlyingLogoAnimation 6s ease-in-out infinite;
+}
+
+@keyframes EasyTechFlyingLogoAnimation {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    25% {
+        transform: translate3d(3px, -2px, -2px);
+    }
+
+    50% {
+        transform: translate3d(-2px, 3px, -2px);
+    }
+
+    75% {
+        transform: translate3d(-2px, -2px, 3px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
 }
 
 
@@ -27,26 +88,8 @@ body {
 
 
 
-
-/* ****************************************  INSET NAV CODE ABOVE ****************************************  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ********************************************* Page Header *********************************************  */
+
 .storeTitle {
     font-family: 'Mukta', sans-serif;
     font-size: 23px;
