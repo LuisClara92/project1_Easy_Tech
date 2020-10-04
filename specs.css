@@ -34,12 +34,10 @@ body {
     margin: 8px 15px;
 }
 
-
 #navMenu li,
 #navMenu li:after,
 #navMenu li:before {
     transition: all .2s;
-
 }
 
 #navMenu li:hover {
