@@ -17,6 +17,16 @@ body {
 
 /* ****************************************  INSET NAV CODE ABOVE ****************************************  */
 
+body {
+    width: 100%;
+    background-color: #D8D8D8;
+    background-image: linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
+}
+
+
+
+
+
 .navContainer {
     width: 75%;
     overflow: hidden;
@@ -25,6 +35,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
+
+
+
+
 
 .easyTechLogo {
     display: flex;
@@ -43,6 +57,8 @@ body {
     width: 75%;
     margin-left: 10px;
 }
+
+
 
 
 /* ********************************************* ANIMATED LOGO *********************************************   */
@@ -83,10 +99,27 @@ body {
 
 
 
+.navMenu {
+    float: right;
+    list-style: none;
+    font-size: 15px;
+}
+
+.navMenu ul {
+    margin: 25px 25px 25px 8px;
+}
+
+.navMenu li {
+    display: inline-block;
+    text-align: center;
+    margin: 8px 15px;
+}
 
 
-
-
+.navMenu li:hover {
+    text-shadow: 1px 1px 2px #ccc;
+    cursor: pointer;
+}
 
 /* ********************************************* Page Header *********************************************  */
 
