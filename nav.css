@@ -1,0 +1,172 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+
+
+
+
+.navContainer {
+    width: 75%;
+    overflow: hidden;
+    margin: auto auto;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+
+.easyTechLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100px;
+    margin: 15px 30px 15px 30px;
+}
+
+#easyTechImage {
+    width: 50%;
+}
+
+#easyTechMoto {
+    width: 75%;
+    margin-left: 10px;
+}
+
+
+
+
+
+.navMenu {
+    float: right;
+    list-style: none;
+    font-size: 15px;
+}
+
+.navMenu ul {
+    margin: 25px 25px 25px 8px;
+}
+
+.navMenu li {
+    display: inline-block;
+    text-align: center;
+    margin: 8px 15px;
+}
+
+
+.navMenu li:hover {
+    text-shadow: 1px 1px 2px #ccc;
+    cursor: pointer;
+}
+
+
+
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .navContainer {
+        width: 80%;
+    }
+
+    .navMenu li {
+        margin: 8px 8px;
+        font-size: 14px;
+    }
+}
+
+
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+
+
+@media screen and (max-width: 910px) {
+
+    .navContainer {
+        width: 85%;
+    }
+
+    .navMenu li {
+        margin: 8px 8px;
+        font-size: 14px;
+    }
+}
+
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+
+@media screen and (max-width: 780px) {
+    .navMenu li {
+        margin: 5px 5px;
+        font-size: 12px;
+    }
+
+    .easyTechLogo {
+        width: 90px;
+        margin: 15px 0 0 25px;
+    }
+}
+
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+
+@media screen and (max-width: 675px) {
+    .navContainer {
+        width: 90%;
+    }
+
+    .easyTechLogo {
+        width: 70px;
+        margin: 20px 0 0 20px;
+    }
+
+    .navMenu li {
+        margin: 5px 5px;
+        font-size: 12px;
+    }
+}
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+@media screen and (max-width: 600px) {
+
+    .navContainer {
+        width: 95%;
+    }
+
+    #easyTechMoto {
+        display: none;
+    }
+
+    .easyTechLogo {
+        width: 60px;
+        margin: 5px 0 0 5px;
+    }
+
+    .navMenu {
+        float: none;
+        margin: 0;
+    }
+
+    .navMenu ul {
+        margin: 8px 2px;
+    }
+
+    .navMenu li {
+        margin: 5px 5px;
+        font-size: 10px;
+
+    }
+}
