@@ -1,6 +1,4 @@
 body {
-    background-color: #fdfdfd;
-    font-family: 'Ubuntu', sans-serif;
     width: 100%;
 }
 
@@ -27,7 +25,7 @@ body {
     align-items: center;
     float: left;
     width: 100px;
-    margin: 15px 30px 15px 30px;
+    margin: 20px 30px 15px 30px;
 }
 
 #easyTechImage {
@@ -38,6 +36,57 @@ body {
     width: 75%;
     margin-left: 10px;
 }
+
+
+
+
+/* ********************************************* ANIMATED LOGO *********************************************   */
+
+.EasyTechFlyingLogo {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: EasyTechFlyingLogoAnimation 6s ease-in-out infinite;
+}
+
+@keyframes EasyTechFlyingLogoAnimation {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    25% {
+        transform: translate3d(3px, -2px, -2px);
+    }
+
+    50% {
+        transform: translate3d(-2px, 3px, -2px);
+    }
+
+    75% {
+        transform: translate3d(-2px, -2px, 3px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,6 +149,10 @@ body {
         margin: 8px 8px;
         font-size: 14px;
     }
+
+    .easyTechLogo {
+        margin: 25px 0 0 25px;
+    }
 }
 
 
@@ -113,9 +166,10 @@ body {
     }
 
     .easyTechLogo {
-        width: 90px;
+        width: 80px;
         margin: 15px 0 0 25px;
     }
+
 }
 
 
@@ -127,9 +181,14 @@ body {
         width: 90%;
     }
 
+    .EasyTechFlyingLogo {
+        width: 80%;
+
+    }
+
     .easyTechLogo {
         width: 70px;
-        margin: 20px 0 0 20px;
+        margin: 16px 0 0 20px;
     }
 
     .navMenu li {
@@ -143,7 +202,7 @@ body {
 @media screen and (max-width: 600px) {
 
     .navContainer {
-        width: 95%;
+        width: 100%;
     }
 
     #easyTechMoto {
@@ -151,22 +210,52 @@ body {
     }
 
     .easyTechLogo {
-        width: 60px;
-        margin: 5px 0 0 5px;
+        width: 40px;
+        margin: 15px 5px 8px 15px;
     }
 
-    .navMenu {
-        float: none;
-        margin: 0;
+    .EasyTechFlyingLogo img {
+        width: 100%;
     }
 
     .navMenu ul {
-        margin: 8px 2px;
+        margin: 15px 6px;
     }
 
     .navMenu li {
-        margin: 5px 5px;
-        font-size: 10px;
+        margin: 5px 12px;
+        font-size: 12px;
+    }
+}
 
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+@media screen and (max-width: 500px) {
+
+    .navContainer {
+        width: 100%;
+    }
+
+    #easyTechMoto {
+        display: none;
+    }
+
+    .easyTechLogo {
+        width: 40px;
+        margin: 15px 5px 8px 15px;
+    }
+
+    .EasyTechFlyingLogo img {
+        width: 100%;
+    }
+
+    .navMenu ul {
+        margin: 15px 2px;
+    }
+
+    .navMenu li {
+        margin: 5px 4px;
+        font-size: 12px;
     }
 }
