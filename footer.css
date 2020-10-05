@@ -1,0 +1,77 @@
+*{ 
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+
+}   
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding:70px 0;
+    box-sizing: border-box;
+    background: #1d1d1d;
+}
+.inner_footer{
+    display: block;
+    margin:0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+
+}
+.inner_footer .logo_container img{
+    width: 150px;
+    height: auto;
+
+}
+.inner_footer .third{
+    width: calc(22% - 30px);
+    margin-right:10px;
+    float:left;
+    height: 100%;
+
+}
+.inner_footer .third:last-child{
+    margin-right: 0;
+}
+.inner_footer .third h1{
+    font-family: "arial";
+    font-size: 22px;
+    color:white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner_footer .third a{
+    font-family: "arial";
+    font-size: 15px;
+    color:white;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.inner_footer .third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 15px;
+
+}
+.inner_footer .third span{
+    color:white;
+    font-family:"arial";
+    font-size:10px;
+    font-weight:200;
+    display:block;
+    width:100%;
+    padding-top:20px;
+ 
+}
