@@ -1,3 +1,12 @@
+const cartWindow
+
+function openWindow() {
+    cartWindow = window.open("about:blank", "Shopping Cart", "width=750, height=423");
+}
+
+
+
+
 $('.minus-btn').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
