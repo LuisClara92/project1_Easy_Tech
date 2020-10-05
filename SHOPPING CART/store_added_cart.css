@@ -60,18 +60,18 @@ buttons {
 
 .delete-btn {
     display: inline-block;
-    position: relative;
-    width: 18px;
-    height: 17px;
+    width: 30px;
+    height: 36px;
+    top: 10px;
+    left: -2px;
     background: url("https://designmodo.com/demo/shopping-cart/delete-icn.svg") no-repeat center;
     cursor: pointer;
 }
 
 .like-btn {
-    display: inline-block;
     position: relative;
-    top: 9px;
-    left: 15px;
+    top: 12px;
+    left: -10px;
     background: url("https://designmodo.com/demo/shopping-cart/twitter-heart.png");
     width: 60px;
     height: 60px;
