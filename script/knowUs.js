@@ -20,6 +20,12 @@ function openTab(evt, options) {
 openTab(event, 'SignUp')
   
 
-function contact(){
-    
+// const buttonEvent = document.querySelector('.btn')
+
+// buttonEvent.addEventListener('click', function(){
+//   alert('Thanks for submitting your message. Our crew will respond shortly.')
+// })
+
+function contact() {
+  alert("Thanks for submitting your message. Our crew will respond shortly.");
 }
