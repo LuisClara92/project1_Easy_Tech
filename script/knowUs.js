@@ -1,3 +1,4 @@
+// ********change between SignUp and Login*************
 let tablinks = document.getElementsByClassName("tablinks");
 
 tablinks[0].className = tablinks[0].className.replace(" ", "active");
@@ -18,14 +19,10 @@ function openTab(evt, options) {
   }
 
 openTab(event, 'SignUp')
-  
 
-// const buttonEvent = document.querySelector('.btn')
 
-// buttonEvent.addEventListener('click', function(){
-//   alert('Thanks for submitting your message. Our crew will respond shortly.')
-// })
 
+// ******************Contact message****************
 function contact() {
   alert("Thanks for submitting your message. Our crew will respond shortly.");
 }

@@ -28,6 +28,7 @@ h2{
     justify-content: flex-end;    
 }
 
+/* ********************************** IMAGES********************************** */
  
 ul#photo-container{
     width: 60%;
@@ -75,6 +76,10 @@ ul#photo-container li#photo-easytech {
     background-color: #ffffff;
 }
 
+
+
+
+/* ********************************** TABLE********************************** */
 table#tablePerformance {
     font-family: 'Quicksand', sans-serif;;
     border-spacing: 0px;
@@ -109,6 +114,7 @@ table#tablePerformance caption span{
     margin-top: 10px;
 }
 
+/* ********************************** BOTTOM COLUMNS ****************************************** */
 
 .container-column{
     text-align: center;
