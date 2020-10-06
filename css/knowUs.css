@@ -5,15 +5,18 @@ body {
     line-height: 2rem;
     font-size: 16px;
     font-weight: 400;
-    width: 60%;
+    width: 100%;
     margin: 10px auto;
 }
 h1{
     font-family: 'Mukta', sans-ser;
     border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
     /* margin-left: 32px; */
-    margin-top: 50px;
     font-size: 30pt;
+    width: 60%;
+    margin: 50px auto 0 auto;
+    
 }
 h2{
     position: relative;
@@ -21,17 +24,25 @@ h2{
     font-size: 25pt;
     text-align: center;
     margin-bottom: 15px;
+    width: 60%;
+    margin: 30px auto 0 auto;
 }
 h3{
     position: relative;
     font-family: 'Mukta', sans-ser;
     margin-top: 0;
 }
+.aboutUsTitle{
+    margin-bottom: 30px;
+}
 .containerH3{
     display: inline-flex;
     line-height: 2rem;
     font-size: 14pt;
     font-weight: 400;
+    width: 60%;
+    margin: 0 auto 30px auto;
+    text-align: justify;
 }
 #easytechLogo{
     animation: EasyTechFlyingLogoAnimation 3s ease-in-out infinite;
@@ -56,13 +67,16 @@ h3{
     margin-top: 20px;
 }
 #content{
-    width: 100%;
     font-family: 'Quicksand', sans-serif;
     line-height: 2rem;
     font-size: 16pt;
     font-weight: 400;
-    margin-bottom: 0;
+    width: 60%; 
+    margin: 0 auto 0 auto;
     text-align: justify;
+}
+#content p{
+    margin-top: 20px;
 }
 #contact{
     margin-top: 50px;
@@ -191,4 +205,53 @@ button.btn{
 #navReference,
 #footerReference {
     width: 100%;
+}
+
+@media screen and (max-width: 1230px) {
+    .content{
+        width: 750px;
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+    .content{
+        width: 90%;
+        margin-right: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 815px) {
+    .content{
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .contact{
+        width: 75%;
+    }
+    .tab{
+        width: 30%;
+        margin-left:30px;
+    }
+    /* #userSign p{
+        width: 100%;
+    } */
+}
+@media screen and (max-width: 730px) {
+    .content{
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .contact{
+        width: 75%;
+    }
+    .tab{
+        padding: 0;
+        width: 50%;
+        margin-left:30px;
+    }
 }
