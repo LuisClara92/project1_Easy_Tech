@@ -5,10 +5,11 @@
 }
 
 *{ margin:0;padding:0; box-sizing:border-box;}
+
 .header{
     width:100%;
     height:100vh;
-    background-image: linear-gradient(rgba(180, 180, 180, 0.637),rgba(180, 180, 180, 0.637)),url(/images/harrison-broadbent-1mu9gF8OhNk-unsplash.jpg);
+    background-image: linear-gradient(rgba(180, 180, 180, 0.637),rgba(180, 180, 180, 0.637)),url(/images/harrison-broadbent-1mu9gF8OhNk-unsplash.jpg);width:100%; heigh:auto;
     background-repeat: no-repeat;
     max-width: 100%;
     background-size: 100% 100%;
@@ -19,7 +20,7 @@
 .header:before{
     content:"";
     position:absolute;
-    top:0%;
+    top:0%; 
     left:0;
     right:0;
     opacity:.4;
@@ -41,8 +42,8 @@
     font-weight:bold;
 }
 
-
 /**** extra****/
+
 .header-extra{
     width:100%; height: auto;
     margin:100px 0;
