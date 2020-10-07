@@ -506,6 +506,7 @@ buttons {
 }
 
 .description span:last-child {
+    line-height: 1.2rem;
     font-weight: 300;
     margin-top: 8px;
     color: #86939E;
