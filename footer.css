@@ -3,8 +3,8 @@
     padding:0;
     list-style:none;
     text-decoration:none;
+}
 
-}   
 .footer{
     width: 100vw;
     display: block;
@@ -33,7 +33,7 @@
 
 }
 .inner_footer .third{
-    width: calc(22% - 30px);
+    width: calc(21% - 30px);
     margin-right:10px;
     float:left;
     height: 100%;
@@ -43,16 +43,16 @@
     margin-right: 0;
 }
 .inner_footer .third h1{
-    font-family: "arial";
-    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 16px;
     color:white;
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 .inner_footer .third a{
-    font-family: "arial";
-    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 10px;
     color:white;
     font-weight: 200;
     display: block;
@@ -63,15 +63,13 @@
     display: inline-block;
     padding: 0 5px;
     font-size: 15px;
-
 }
 .inner_footer .third span{
     color:white;
-    font-family:"arial";
+    font-family: 'Ubuntu', sans-serif;;
     font-size:10px;
     font-weight:200;
     display:block;
     width:100%;
     padding-top:20px;
- 
 }
