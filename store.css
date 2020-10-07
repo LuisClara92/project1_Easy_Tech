@@ -251,6 +251,7 @@ body {
     width: 75%;
     grid-gap: 10px;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 
@@ -375,6 +376,8 @@ body {
 
 
 .shopping-cart {
+    display: flex;
+    flex-direction: column;
     width: 750px;
     /* height: 423px; */
     height: 530px;
@@ -384,9 +387,7 @@ body {
     border-radius: 6px;
     border: solid 2px #eeeeee;
     margin-bottom: 20vh;
-
-    display: flex;
-    flex-direction: column;
+    /* display: none; */
 }
 
 
@@ -467,11 +468,6 @@ buttons {
         background-position: right;
     }
 }
-
-
-
-
-
 
 
 

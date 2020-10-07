@@ -1,6 +1,6 @@
-function openDialog() {
-    alert("Enjoy all the benefits of an\nEasy Tech!");
-}
+// function openDialog() {
+//     alert("Enjoy all the benefits of an\nEasy Tech!");
+// }
 
 
 
@@ -34,38 +34,56 @@ function openDialog() {
 
 
 
+function addToCart(event) {
+    let shoppingCartItems = document.getElementsByClassName("storeCards");
+    console.log(shoppingCartItems);
+    console.log(event.currentTarget.id);
+    // if (x.style.display === "none") {
+    //     x.style.display = "block";
+    // } else {
+    //     x.style.display = "none";
+    // }
+}
 
-$('.minus-btn').on('click', function (e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
 
-    if (value > 1) {
-        value = value - 1;
-    } else {
-        value = 0;
-    }
 
-    $input.val(value);
+// document.getElementsByClassName("storeCards").onclick =
 
-});
 
-$('.plus-btn').on('click', function (e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
 
-    if (value < 100) {
-        value = value + 1;
-    } else {
-        value = 100;
-    }
 
-    $input.val(value);
-});
 
-$('.like-btn').on('click', function () {
-    $(this).toggleClass('is-active');
-});
+// $('.minus-btn').on('click', function (e) {
+//     e.preventDefault();
+//     var $this = $(this);
+//     var $input = $this.closest('div').find('input');
+//     var value = parseInt($input.val());
+
+//     if (value > 1) {
+//         value = value - 1;
+//     } else {
+//         value = 0;
+//     }
+
+//     $input.val(value);
+
+// });
+
+// $('.plus-btn').on('click', function (e) {
+//     e.preventDefault();
+//     var $this = $(this);
+//     var $input = $this.closest('div').find('input');
+//     var value = parseInt($input.val());
+
+//     if (value < 100) {
+//         value = value + 1;
+//     } else {
+//         value = 100;
+//     }
+
+//     $input.val(value);
+// });
+
+// $('.like-btn').on('click', function () {
+//     $(this).toggleClass('is-active');
+// });
