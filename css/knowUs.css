@@ -236,8 +236,8 @@ button.btn{
 /* ********************************** MEDIA QUERIES********************************** */
 @media screen and (max-width: 1230px) {
     .content{
-        width: 750px;
-        margin-left: 0px;
+        width: 90%;
+        margin-left: 50px;
         margin-right: 50px;
     }
     
@@ -245,17 +245,19 @@ button.btn{
 @media screen and (min-width: 1000px) {
     .content{
         width: 90%;
-        margin-right: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 817px) {
     .content{
         width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
+    
     .contact{
         width: 75%;
     }
@@ -263,7 +265,7 @@ button.btn{
         width: 30%;
         margin-left:30px;
     }
-    input{
+    #cName{
         float:none;
     }
     /* #userSign p{
