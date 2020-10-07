@@ -78,24 +78,35 @@ ul#photo-container li:hover{
     transition: all .3s ease-in;
 }
 ul#photo-container li:hover span{
-    opacity: 1;;
+    opacity: 1;
 }
-ul#photo-container li#photo-desktop {
+ul#photo-container li#photo-linpack {
     float: left;
-    background: url('../images/computers-2.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
+    background: url('../images/limpacktest.png') no-repeat;
+    background-position: 100% 100%;
+    background-size: 500px 500px;
     background-color: #ffffff;
 }
-ul#photo-container li#photo-easytech {
+ul#photo-container li#photo-usb {
     float: right;
-    background: url('../images/raspPI.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
+    background: url('../images/usbtest.png') no-repeat;
+    background-position: 100% 100%;
+    background-size: 500px 500px;
     background-color: #ffffff;
 }
-
-
+ul#photo-container li#photo-wireless {
+    float: right;
+    background: url('../images/wirelesstest.png') no-repeat;
+    background-position: 100% 100%;
+    background-size: 500px 500px;
+    background-color: #ffffff;
+}
+ul#photo-container li#photo-gimp {
+    float: right;
+    background: url('../images/gimptest2.png') no-repeat;
+    background-size: 500px 500px;
+    background-color: #ffffff;
+}
 
 
 /* ********************************** TABLE********************************** */

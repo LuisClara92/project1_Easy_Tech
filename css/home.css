@@ -1,0 +1,55 @@
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(180, 180, 180, 0.637),rgba(180, 180, 180, 0.637)),url(/images/harrison-broadbent-1mu9gF8OhNk-unsplash.jpg);width:100%; heigh:auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: 100% 100%;
+    clip-path:polygon(100% 0, 100% 77%, 50% 100%,0 75%,0 0);
+    position:relative;
+}
+
+.header:before{
+    content:"";
+    position:absolute;
+    top:0%; 
+    left:0;
+    right:0;
+    opacity:.4;
+    z-index:-1;
+    background:linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
+}
+.center-div{
+    font-size: 30px;
+    width: auto;
+    height: inherit;
+    color:rgb(0, 0, 0);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.font-weight-bold{
+    font-size:60px;
+    font-weight:bold;
+}
+
+/**** extra****/
+
+.header-extra{
+    width:100%; height: auto;
+    margin:100px 0;
+    text-align: center;
+}
+.extra-div{
+    background: #ffff;
+    border:medium none;
+    padding:50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
