@@ -250,7 +250,7 @@ button.btn{
     
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 816px) {
     .content{
         width: 90%;
         margin-left: 50px;
@@ -262,6 +262,9 @@ button.btn{
     .tab{
         width: 30%;
         margin-left:30px;
+    }
+    input{
+        float:none;
     }
     /* #userSign p{
         width: 100%;
