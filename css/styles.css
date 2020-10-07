@@ -12,12 +12,23 @@ body {
     width: 75%;
     overflow: hidden;
     margin: auto auto;
-
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
-
-
+.navContainer a{
+    color: #000000
+}
+.navContainer a:link {
+    text-decoration: none;
+}
+  
+.navContainer a:visited {
+    text-decoration: none;
+}
+  
+.navContainer a:hover {
+    text-decoration: underline;
+}
 
 
 

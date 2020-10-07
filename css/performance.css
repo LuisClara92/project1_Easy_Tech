@@ -3,59 +3,78 @@ body {
     background-color: #fdfdfd;
     font-family: 'Quicksand', sans-serif;
     line-height: 2rem;
-    font-size: 16pt;
+    font-size: 16px;
     font-weight: 400;
-    width: 60%;
-    margin: 10px auto;
+    width: 75%;
+    margin: 10px auto 0 auto;
 }
 h1{
     font-family: 'Mukta', sans-ser;
     border-bottom: 1px solid #000000;
-    /* margin-left: 32px; */
+    width: 100%;
+    text-align: left;
     margin-top: 50px;
-    font-size: 30pt;
+    font-size: 28px;
 }
 h2{
     position: relative;
     font-family: 'Mukta', sans-ser;
-    font-size: 25pt;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
 }
-.container-intro{
-    display: inline-block;
-    width: 1500px;
-    justify-content: flex-end;    
+.sectionContainer{
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* ********************************** IMAGES********************************** */
  
 ul#photo-container{
-    width: 60%;
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    width: 75%;
+    grid-gap: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* width: 60%;
     margin: auto;
     padding: 50px;
     overflow: hidden;
-    list-style: none;
+    list-style: none; */
 }
 ul#photo-container li{
-    width: 40%;
+    margin: 40px auto 0 auto;
+    width: 75%;
+    height: 250px;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, .1);
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 #00000033;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+    /* width: 40%;
     height: 300px;
     margin: 10px;
     border: 5px solid #ffffff;
     background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4); */
 }
 ul#photo-container li span{
     opacity: 0;
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
     background-color: rgba(0, 0, 0, .3);
-    font-size: 14pt;
+    font-size: 16px;
     line-height: 370px;
     padding: 5px;
 }
 ul#photo-container li:hover{
-    transform: scale(1.35);
+    margin-top: 20px;
+    transform: scale(1.1);
     transition: all .3s ease-in;
 }
 ul#photo-container li:hover span{
@@ -70,7 +89,7 @@ ul#photo-container li#photo-desktop {
 }
 ul#photo-container li#photo-easytech {
     float: right;
-    background: url('../images/desktop2.jpg') no-repeat;
+    background: url('../images/raspPI.jpg') no-repeat;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: #ffffff;
@@ -87,7 +106,7 @@ table#tablePerformance {
     margin-left: auto;
     margin-right: auto;
     word-wrap: break-word;
-    width: 800px;
+    width: 75%;
     
 }
 table#tablePerformance td {
@@ -104,13 +123,13 @@ table#tablePerformance td.ce {
 }
 
 table#tablePerformance caption {
-    font-size: 13pt;
+    font-size: 16px;
     font-weight: bolder;
 }
 table#tablePerformance caption span{
     display: block;
     float: right;
-    font-size: 8pt;
+    font-size: 10px;
     margin-top: 10px;
 }
 
@@ -119,12 +138,12 @@ table#tablePerformance caption span{
 .container-column{
     text-align: center;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }
 .column{
     justify-content: center;
     align-items: center;
-    vertical-align: top;
+    /* vertical-align: top; */
     float: left;
     width: 48%;
     margin-top: 30px;
@@ -134,23 +153,27 @@ table#tablePerformance caption span{
 #contentSoftware{
     margin-bottom: 75px;
 }
+.contentSoftwarePanel{
+    line-height:20px;
+}
 #contentHardware {
     font-family: 'Mukta', sans-serif;
-    font-size: 16pt;
+    font-size: 16px;
     text-align: center;
     padding-bottom: 10px;
 }
-
-
+.contentHardwarePanel p{
+    padding-bottom:20px;
+}
 .container-column:after{
     clear: both;
 }
 .content-inline{
     display: flex;
-    font-size: 20pt;
+    font-size: 16px;
     padding: 10px;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
     margin: 0 auto 75px auto;
     border-top: 1px solid #000000;
 }
@@ -163,4 +186,40 @@ table#tablePerformance caption span{
 #navReference,
 #footerReference {
     width: 100%;
+}
+
+/* ********************************** MEDIA QUERIES********************************** */
+@media screen and (max-width: 2202px) {
+    body{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1719px){
+    ul#photo-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1680px) {
+    #photo-container{
+        width: 100%;
+        padding:0;
+    }
+}
+@media screen and (max-width: 1470px) {
+    body{
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    body{
+        width: auto;
+    }
+}
+@media screen and (max-width: 730px) {
+    
 }
