@@ -123,7 +123,6 @@ table#tablePerformance caption span{
 .column{
     justify-content: center;
     align-items: center;
-    /* vertical-align: top; */
     float: left;
     width: 48%;
     margin-top: 30px;
@@ -180,10 +179,78 @@ table#tablePerformance caption span{
 }
 
 @media screen and (max-width: 1100px) {
-    body{
+    section.sectionContainer{
         width: auto;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
+    body{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 555px) {
+  
+    div.column{
+        width: 100%;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    table#tablePerformance{
+        width: 100%;
+        margin-left: 50px;
+
+    }
+}
+@media screen and (max-width: 425px) {
+    body{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    div.container-column{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    div#wrapper{
+        align-items: flex-start;
+        margin-left:0;
+        margin-right:30px;
+    }
+    table#tablePerformance{
+        width: 100%;
+        margin-left: 50px;
+
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     
+    div.container-column{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+    table#tablePerformance{
+        width: 100%;
+        margin-left: 50px;
+
+    }
+    h3#contentThink {
+        margin-left:10px;
+    }
+    div.content-inline{
+        width: 100%;
+        margin-left: 30px;
+    }
 }
