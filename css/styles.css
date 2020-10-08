@@ -12,6 +12,8 @@ h1{
     width: 100%;
     text-align: left;
     font-size: 28px;
+    text-shadow: 1px 1px 1px #a0a0a0;
+
 }
 h2{
     position: relative;
