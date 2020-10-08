@@ -1,0 +1,332 @@
+body {
+    width: 100%;
+}
+h1{
+    font-family: 'Mukta', sans-ser;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    padding-bottom: 20px;
+    margin-left: 32px;
+    font-size: 28px;
+    width: 60%;
+    margin: 50px auto 0 auto;
+    
+}
+h2{
+    position: relative;
+    font-family: 'Mukta', sans-ser;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 60%;
+    margin: 30px auto 0 auto;
+}
+h3{
+    position: relative;
+    font-family: 'Mukta', sans-ser;
+    font-size: 20px;
+}
+.aboutUsTitle{
+    margin-bottom: 30px;
+}
+.containerH3{
+    display: inline-flex;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 60%;
+    margin: 0 auto 30px auto;
+    text-align: justify;
+    justify-content: center;
+}
+#contentThink{
+    font-size: 20px;
+}
+#contentBig{
+    font-size: 30px;
+}
+#contentStart{
+    font-size: 30px;
+}
+#contentSmall{
+    font-size: 20px;
+}
+#easytechLogo{
+    width: 30%;
+    position: relative;
+    float:right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#easytechLogo{
+    animation: EasyTechFlyingLogoAnimation 5s ease-in-out infinite;
+}
+@keyframes EasyTechFlyingLogoAnimation {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    25% {
+        transform: translate3d(3px, -2px, -2px);
+    }
+
+    50% {
+        transform: translate3d(-2px, 3px, -2px);
+    }
+
+    75% {
+        transform: translate3d(-2px, -2px, 3px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+.content{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    width: 60%; 
+    margin: 0 auto 0 auto;
+    text-align: justify;
+}
+.content p{
+    margin-top: 20px;
+}
+
+
+/* ********************************** CONTACT FORM********************************** */
+#contact{
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .4);
+    margin-bottom:40px
+}
+    /*style form*/
+form {
+    width: 750px;
+    margin: auto;
+}
+    /* Style the tab */
+.tab {
+    background-color: rgba(255, 255, 255, .8);
+    overflow: hidden;
+    width: 22.1755%;
+    margin-bottom: 10px;
+}
+    /* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+    /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+    /* Create an active/current tablink class */
+.tab button.active {
+    background-color: #cecece;
+}
+    /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+    /*style legend*/
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-family:"Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+    /*style form*/
+input, textarea {
+    font-family:"Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2rem;
+    background-color: rgba(255, 255, 255, .8);
+    margin-top: 10px;
+}
+input{
+    /* width: 42%; */
+    margin-left: 10px;
+}
+    /*insert hover effect in select area*/
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+input#cName{
+    margin-left: 37.5px;
+    width: 45.6%;
+}
+input#cEmail{
+    margin-left: 43px;
+    width: 45.5%;
+}
+input#cPass{
+    width: 45.5%;
+}
+input#cSubject{
+    width: 48.5%;
+}
+    /* Style the fieldset */
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#gender {
+    border: none;
+    width: 150px;
+}
+fieldset#userSign {
+    border: none;
+    background: url(../images/icone-contato.png) no-repeat 95% 95%;
+    margin: 0;
+    margin-top: 20px;
+}
+fieldset#userLog {
+    border: none;
+    background: url(../images/icone-contato2.png) no-repeat 95% 95%;
+    height: 150px;
+}
+fieldset#message {
+    border: none;
+    background: url(../images/icone-mensagem.png) no-repeat 95% 95%;
+    margin-top: 10px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+}
+button.btn{
+    display: block;
+    height: 45px;
+    width: 20%;
+    margin: 0px auto 30px auto;
+    font-family:"Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #ffffff;
+    background-color: #cecece
+}
+
+/* ********************************** MEDIA QUERIES********************************** */
+@media screen and (max-width: 1230px) {
+    .content{
+        width: 60%;
+       
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .content{
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 817px) {
+    .content{
+        width: 90%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .contact{
+        width: 75%;
+    }
+    .tab{
+        width: 30%;
+        margin-left:30px;
+    }
+    #cName{
+        float:none;
+    }
+    fieldset#userSign {
+        background: none;
+    }
+    fieldset#userLog {
+        background: none;
+    }
+    fieldset#message {
+        background: none;
+    }
+    input#cName{
+        width: 61.5%;
+    }
+    input#cEmail{
+        width: 61.5%;
+    }
+    input#cPass{
+        width: 61.5%;
+    }
+    input#cSubject{
+        width: 61.5%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact{
+        width: 75%;
+    }
+    .tab{
+        padding: 0;
+        width: 50%;
+        margin-left:30px;
+    }
+    input#cName{
+        width: 64.5%;
+    }
+    input#cEmail{
+        width: 64.5%;
+    }
+    input#cPass{
+        width: 64.5%;
+    }
+    input#cSubject{
+        width: 64.5%;
+    }
+
+               
+}
+@media screen and (max-width: 425px) {
+    input#cName{
+        width: 99.5%;
+        margin-left:0;
+    }
+    input#cEmail{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    input#cPass{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    input#cSubject{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    textarea#cMsg{
+        width: 100%;
+    }
+               
+}
