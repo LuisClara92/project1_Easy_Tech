@@ -4,8 +4,7 @@
     width: 100%;
 }
 
-*{ margin:0;padding:0; box-sizing:border-box;
-     font-family: 'Mukta', sans-serif}
+*{ margin:0;padding:0; box-sizing:border-box;}
 
 
 .header{
@@ -32,6 +31,7 @@
     background:linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
 }
 .center-div{
+    font-family: 'Mukta', sans-serif;
     font-size: 30px;
     width: auto;
     height: inherit;
@@ -54,6 +54,7 @@
     margin:100px 0;
     text-align: center;
     line-height: 20px;
+    font-family: 'Mukta', sans-serif;
 }
 .extra-div{
     background-color: #D8D8D8;
