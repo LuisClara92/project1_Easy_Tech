@@ -38,6 +38,16 @@
     display: inline;
     text-align: center;
 }
+@media screen and (max-width:1024px) {
+    div.first.box {
+        margin-left: 100px;
+    }
+    .box .conteiner{
+        margin:20px 0 0 0;
+        line-height:20px;
+        text-align: center;}
+}
+
 @media screen and (max-width:900px) {
     .inner_footer {
         flex-direction: column;
