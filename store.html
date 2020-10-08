@@ -20,7 +20,7 @@
 <body>
 
 
-    <!-- *****************************  NAV   ***************************** -->
+    <!-- ***************************************************  NAV   ************************************************************** -->
 
     <section class="navContainer">
         <div class="easyTechLogo">
@@ -47,6 +47,7 @@
 
 
 
+    <!-- ***************************************************  TITLE   ************************************************************** -->
 
 
     <h1 class="storeTitle">Store
@@ -65,6 +66,7 @@
 
 
 
+    <!-- ***************************************************  CONTENT BELLOW HEAD   ************************************************************** -->
 
 
     <section class="contentBellowHead">
@@ -95,6 +97,7 @@
 
 
 
+    <!-- ***************************************************  CONTENT ABOVE CARDS   ************************************************************** -->
 
 
     <h2 class="titleAboveCards">
@@ -116,23 +119,29 @@
 
 
 
+    <!-- ***************************************************  CARDS   ************************************************************** -->
+
+
+
     <section class="storeCardsContainer">
 
-        <div class="storeCards" onclick="openDialog()">
+        <div class="storeCards" id="0" onclick="addToCart(event)">
             <div class="card">
                 <a class="storeEasyTech2GB" href="#"></a>
                 <img src="/images/EasyTech2GB.png" alt="Easy Tech 2GB">
                 <h3>Easy Tech 2GB
                     <object type="image/svg+xml" data="/images/EasyTech_logo.svg" class="logoElement"></object>
                 </h3>
-                <p>Great choice for day-to-day basics.</p>
+                <p>Great choice for day-to-day basics</p>
                 <p class="price">€35</p>
             </div>
         </div>
 
 
 
-        <div class="storeCards" onclick="openDialog()">
+
+
+        <div class="storeCards" id="1" onclick="addToCart(event)">
             <div class="card">
                 <a class="storeEasyTech4GB" href="#"></a>
                 <img src="/images/EasyTech4GB.png" alt="Easy Tech 4GB">
@@ -146,8 +155,10 @@
 
 
 
-        <div class="storeCards" onclick="openDialog()">
-            <div class="card">
+
+
+        <div class="storeCards" id="2" onclick="addToCart(event)">
+            <div class=" card">
                 <a class="storeEasyTech8GB" href="#"></a>
                 <img src="/images/EasyTech8GB.png" alt="Easy Tech 8GB">
                 <h3>Easy Tech 8GB
@@ -165,27 +176,137 @@
 
 
 
-    <!-- ***************************** INSERT FOOTER CODE BELLOW ***************************** -->
+
+
+    <!-- ***************************************** SHOPPING CART ***************************************** -->
+
+
+    <section class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+            Shopping Cart
+        </div>
+
+
+
+
+        <!-- Product #1 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="/images/item-1.png" alt="">
+            </div>
+
+            <div class="description">
+                <span>Easy Tech 2GB</span>
+                <span>Great choice for day-to-day basics</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="/images/plus.svg" alt="">
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="/images/minus.svg" alt="">
+                </button>
+            </div>
+
+            <div class="total-price">€35</div>
+        </div>
+
+
+
+
+
+        <!-- Product #2 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn is-active"></span>
+            </div>
+
+            <div class="image">
+                <img src="/images/item-2.png" alt="">
+            </div>
+
+            <div class="description">
+                <span>Easy Tech 4GB</span>
+                <span>Good power for playing around</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="/images/plus.svg" alt="">
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="/images/minus.svg" alt="">
+                </button>
+            </div>
+
+            <div class="total-price">€49</div>
+        </div>
+
+
+
+
+
+        <!-- Product #3 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="/images/item-3.png" alt="">
+            </div>
+
+            <div class="description">
+                <span>Easy Tech 8GB</span>
+                <span>Performance at it's highest</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="/images/plus.svg" alt="">
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="/images/minus.svg" alt="">
+                </button>
+            </div>
+
+            <div class="total-price">€58</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ***************************************** INSERT FOOTER CODE BELLOW ***************************************** -->
 
     <img id="footerReference" src="/images/navReference.jpg" alt="toBeReplaced">
 
 
 
 
-
-
-
-
-
-
-
-
-    <!-- ***************************** INSERT FOOTER CODE ABOVE ***************************** -->
-
-
-
+    <!-- ***************************************** INSERT FOOTER CODE ABOVE ***************************************** -->
 
     <script src="./script/store.js"></script>
 
-
 </body>
+
+</html>
