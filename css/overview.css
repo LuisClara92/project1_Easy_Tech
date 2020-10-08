@@ -1,0 +1,427 @@
+    body {
+        width: 100%;
+        background-color: #D8D8D8;
+        background-image: linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
+    }
+
+
+
+    /* #################################### NAV #################################### */
+
+    .navContainer {
+        width: 75%;
+        overflow: hidden;
+        margin: auto auto;
+
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+
+
+    .easyTechLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 100px;
+        margin: 20px 30px 15px 30px;
+    }
+
+    #easyTechImage {
+        width: 50%;
+    }
+
+    #easyTechMoto {
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    .navMenu {
+        float: right;
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .navMenu ul {
+        margin: 25px 25px 25px 8px;
+    }
+
+    .navMenu li {
+        display: inline-block;
+        text-align: center;
+        margin: 8px 15px;
+        text-decoration: none;
+    }
+
+
+    .navMenu li:hover {
+        text-shadow: 1px 1px 2px #ccc;
+        cursor: pointer;
+    }
+
+
+    /* ********************************************* ANIMATED LOGO *********************************************   */
+
+    .EasyTechFlyingLogo {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: EasyTechFlyingLogoAnimation 6s ease-in-out infinite;
+    }
+
+    @keyframes EasyTechFlyingLogoAnimation {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        25% {
+            transform: translate3d(3px, -2px, -2px);
+        }
+
+        50% {
+            transform: translate3d(-2px, 3px, -2px);
+        }
+
+        75% {
+            transform: translate3d(-2px, -2px, 3px);
+        }
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
+
+
+
+
+
+
+
+    /* ********************************************* HEADER  *********************************************   */
+
+
+
+    .headerContainer {
+        display: flexbox;
+        justify-content: center;
+        margin-bottom: 40vh;
+        border-bottom: solid 1px #2457ff;
+    }
+
+
+    .headerImage {
+        /* position: relative; */
+        width: 100%;
+        /* overflow: hidden; */
+        background-size: cover;
+        border: solid 1px red;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .headerText {
+        display: inline;
+        position: absolute;
+        bottom: 368px;
+        left: 386px;
+
+        font-family: 'Mukta', sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 70px;
+        text-align: justify;
+        color: #000000;
+    }
+
+    .headerText h1 {
+        display: inline;
+
+    }
+
+
+
+
+
+    /* .headerContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+
+}
+
+.headerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/heaherBackground3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding-top: 13.5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(255, 0, 0);
+    font-family: arial;
+} */
+
+
+
+
+
+    /* .headerImage {
+        display: block;
+    }
+
+
+    .headerContainer {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .headerText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(232, 7, 7)(16, 32, 32);
+        font-weight: bold;
+
+    } */
+
+
+    /* 
+@media (min-width: 1200px) {
+    .divtext {
+        font-size: 60px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+    /* ********************************** FOOTER ********************************** */
+
+
+
+    .footer {
+        /* position: fixed; */
+        bottom: 0px;
+        width: 100%;
+        background: black;
+    }
+
+    .inner_footer {
+        display: flex;
+    }
+
+    .inner_footer .box {
+        flex-basis: 50%;
+        padding: 10px 20px;
+    }
+
+    .box h1 {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .box .conteiner {
+        margin: 20px 0 0 0;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .box .conteiner li {
+        list-style-type: none;
+        display: inline;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 1000px) {
+
+        .navContainer {
+            width: 80%;
+        }
+
+        .navMenu li {
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 910px) {
+
+        .navContainer {
+            width: 85%;
+        }
+
+        .navMenu li {
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+
+        .easyTechLogo {
+            margin: 25px 0 0 25px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 780px) {
+        .navMenu li {
+            margin: 5px 5px;
+            font-size: 12px;
+        }
+
+        .easyTechLogo {
+            width: 80px;
+            margin: 15px 0 0 25px;
+        }
+
+    }
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 675px) {
+        .navContainer {
+            width: 90%;
+        }
+
+        .EasyTechFlyingLogo {
+            width: 80%;
+
+        }
+
+        .easyTechLogo {
+            width: 70px;
+            margin: 16px 0 0 20px;
+        }
+
+        .navMenu li {
+            margin: 5px 5px;
+            font-size: 12px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 600px) {
+
+        .navContainer {
+            width: 100%;
+        }
+
+        #easyTechMoto {
+            display: none;
+        }
+
+        .easyTechLogo {
+            width: 40px;
+            margin: 15px 5px 8px 15px;
+        }
+
+        .EasyTechFlyingLogo img {
+            width: 100%;
+        }
+
+        .navMenu ul {
+            margin: 15px 6px;
+        }
+
+        .navMenu li {
+            margin: 5px 12px;
+            font-size: 12px;
+        }
+    }
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 500px) {
+
+        .navContainer {
+            width: 100%;
+        }
+
+        #easyTechMoto {
+            display: none;
+        }
+
+        .easyTechLogo {
+            width: 40px;
+            margin: 15px 5px 8px 15px;
+        }
+
+        .EasyTechFlyingLogo img {
+            width: 100%;
+        }
+
+        .navMenu ul {
+            margin: 15px 2px;
+        }
+
+        .navMenu li {
+            margin: 5px 4px;
+            font-size: 12px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 600px) {
+        .inner_footer {
+            width: 80%;
+            /* flex-direction: column; */
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .inner_footer {
+            width: 90%;
+            flex-direction: column;
+        }
+    }
