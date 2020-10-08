@@ -10,7 +10,7 @@
 .footer{
     bottom: 0px;
     width:100%;
-    background:grey;
+    background:rgb(155, 155, 155);
 }
 .inner_footer{
     display: flex;
