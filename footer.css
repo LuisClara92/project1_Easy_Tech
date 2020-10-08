@@ -3,15 +3,15 @@
     padding:0;
     color:white;
     box-sizing: border-box;
-    font-family:Helvetica, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size:10px;
-
 }
+
 .footer{
     position:fixed;
     bottom: 0px;
     width:100%;
-    background: black;
+    background:grey;
 }
 .inner_footer{
     display: flex;
@@ -19,6 +19,10 @@
 .inner_footer .box{
     flex-basis: 50%;
     padding: 10px 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 .box h1{
     font-size: 16px;
@@ -33,9 +37,14 @@
 .box .conteiner li{
     list-style-type: none;
     display: inline;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     .inner_footer {
         flex-direction: column;
     }
-  }
+    .box .conteiner{
+        margin:20px 0 0 0;
+        line-height:20px;
+        text-align: center;}
+}
