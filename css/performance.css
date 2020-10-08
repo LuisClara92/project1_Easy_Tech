@@ -28,86 +28,53 @@ h2{
     margin: 0 auto;
 }
 
-/* ********************************** IMAGES********************************** */
- 
-ul#photo-container{
-    display: grid;
-    grid-auto-rows: minmax(200px, auto);
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    width: 75%;
-    grid-gap: 5px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    /* width: 60%;
-    margin: auto;
-    padding: 50px;
-    overflow: hidden;
-    list-style: none; */
-}
-ul#photo-container li{
-    margin: 40px auto 0 auto;
-    width: 75%;
-    height: 250px;
-    border-radius: 2%;
-    background-color: rgba(0, 0, 0, .1);
-    text-align: center;
-    padding: 16px;
-    box-shadow: 0 4px 8px 0 #00000033;
-    will-change: transform;
-    transform: skewX(0.001deg);
-    transition: transform 0.35s ease-in-out;
-    /* width: 40%;
-    height: 300px;
-    margin: 10px;
-    border: 5px solid #ffffff;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4); */
-}
-ul#photo-container li span{
-    opacity: 0;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000000;
-    background-color: rgba(0, 0, 0, .3);
-    font-size: 16px;
-    line-height: 370px;
-    padding: 5px;
-}
-ul#photo-container li:hover{
-    margin-top: 20px;
-    transform: scale(1.1);
-    transition: all .3s ease-in;
-}
-ul#photo-container li:hover span{
-    opacity: 1;
-}
-ul#photo-container li#photo-linpack {
-    float: left;
-    background: url('../images/limpacktest.png') no-repeat;
-    background-position: 100% 100%;
-    background-size: 500px 500px;
-    background-color: #ffffff;
-}
-ul#photo-container li#photo-usb {
-    float: right;
-    background: url('../images/usbtest.png') no-repeat;
-    background-position: 100% 100%;
-    background-size: 500px 500px;
-    background-color: #ffffff;
-}
-ul#photo-container li#photo-wireless {
-    float: right;
-    background: url('../images/wirelesstest.png') no-repeat;
-    background-position: 100% 100%;
-    background-size: 500px 500px;
-    background-color: #ffffff;
-}
-ul#photo-container li#photo-gimp {
-    float: right;
-    background: url('../images/gimptest2.png') no-repeat;
-    background-size: 500px 500px;
-    background-color: #ffffff;
+/* ********************************** NEW IMAGE TRY********************************** */
+.graficConteiner{
+    width: 100%;
+    margin-top: 30px;
 }
 
+.img {
+    border-radius: 2px;
+    box-shadow: 0 0 5px #343436;
+    filter:brightness(1.1);
+    height: 150px;
+    width: 200px;
+}
+.img:target {
+    height: 450px;
+    width: 500px;
+}
+.img:target+.close {
+    display: block;
+}
+.img:target+.close+.expand{
+    display: none;
+}
+.close {
+    background-image: url(https://bit.ly/29QeT21);
+    background-repeat: no-repeat;
+    bottom: 418px;
+    display: none;
+    height: 32px;
+    left: 462px;
+    margin-top: -32px;  
+    position: relative;
+    width: 32px;
+}
+.expand{
+    bottom: 125px;
+    margin-left: -32px;
+    margin-right: 16px;
+    pointer-events: none;
+    position: relative;
+}
+#wrapper {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
 
 /* ********************************** TABLE********************************** */
 table#tablePerformance {

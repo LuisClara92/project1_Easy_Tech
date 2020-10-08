@@ -35,22 +35,40 @@
 
     <section class="sectionContainer">
         <h1>Performance</h1>
-        <ul id="photo-container">
-            <li id="photo-linpack"><span>Linpack (CPU speed test)</span></li>
-            <li id="photo-usb"><span>USB storage throughput</span></li>
-            <li id="photo-wireless"><span>Wireless LAN throughput </span></li>
-            <li id="photo-gimp"><span>GIMP image editing</span></li>
-        </ul>
-    
+        
+        <div class="graficConteiner">
+            <map name=m1><area shape=rect coords="170 5 195 30" href=#img1></map>
+            <map name=m2><area shape=rect coords="170 5 195 30" href=#img2></map>
+            <map name=m3><area shape=rect coords="170 5 195 30" href=#img3></map>
+            <map name=m4><area shape=rect coords="170 5 195 30" href=#img4></map>
+            <div id=wrapper>
+                <img id=img1 class=img usemap=#m1 src="./images/limpacktest.png" />
+                <a href=# class=close></a>
+                <img class=expand src="./images/Editing-Expand-icon.png"/>
 
+                <img id=img2 class=img usemap=#m2 src="./images/usbtest.png" />
+                <a href=# class=close></a>
+               <img class=expand src="./images/Editing-Expand-icon.png"/>
+
+                <img id=img3 class=img usemap=#m3 src="./images/wirelesstest.png" />
+                <a href=# class=close></a>
+                <img class=expand src="./images/Editing-Expand-icon.png"/>
+
+                <img id=img4 class=img usemap=#m4 src="./images/gimptest.png" />
+                <a href=# class=close></a>
+                <img class=expand src="./images/Editing-Expand-icon.png"/>
+            </div>
+        </div>
         <table id="tablePerformance" >
-            <tr><td class="ce">Linpack (CPU speed test)</td><td class="cd">A synthetic benchmark originally developed for supercomputers, Linpack offers a glimpse at just how far the Raspberry Pi family has come. This version – ported by Roy Longbottom – comes in three variants: the fast single-precision (SP), slower double-precision (DP), and a single-precision variant accelerated using the NEON instructions available in Raspberry Pi 2 and above (NEON).</td></tr>
+            <tr><td class="ce">Linpack (CPU speed test)</td><td class="cd">This version comes in three variants: the fast single-precision (SP), slower double-precision (DP), and a single-precision variant accelerated using the NEON.</td></tr>
+            <!-- A synthetic benchmark originally developed for supercomputers, Linpack offers a glimpse at just how far the Easy Tech has come.  -->
 
-            <tr><td class="ce">USB storage throughput</td><td class="cd">Raspberry Pi 4’s new USB 3.0 ports offer a massive bandwidth boost, which has a big impact on the performance of external storage devices. Here, a solid-state drive (SSD) is connected via a USB adapter and the average read and write throughput measured in megabytes per second (MBps).</td></tr>
+            <tr><td class="ce">USB storage throughput</td><td class="cd">Easy Tech offer a massive bandwidth boost, which has a big impact on the performance of external storage devices.</td></tr>
 
-            <tr><td class="ce">Wireless LAN throughput</td><td class="cd">For this wireless networking test, an ideal environment is created: a Raspberry Pi is placed in line-of-sight of an 802.11ac router, and a wired laptop uses iperf3 to measure the average throughput over several runs. For models with dual-band 2.4 / 5 GHz radios, the test is run on both bands.</td></tr>
+            <tr><td class="ce">Wireless LAN throughput</td><td class="cd">For this wireless networking test, an ideal environment is created.</td></tr>
+            <!-- a Easy Tech is placed in line-of-sight of an 802.11ac router, and a wired laptop uses iperf3 to measure the average throughput over several runs.  -->
 
-            <tr><td class="ce">GIMP image editing</td><td class="cd"> Another real-world test, the popular open-source GIMP image-editing suite is used to process a high-resolution image and save it as a PNG. Like the Speedometer 2.0 benchmark, this is heavily reliant on both CPU and memory performance – and extra memory really helps some of the models on test.</td></tr>
+            <tr><td class="ce">GIMP image editing</td><td class="cd">GIMP image-editing suite is used to process a high-resolution image and save it as a PNG. This is heavily reliant on both CPU and memory performance.</td></tr>
 
         </table>
         <br>
