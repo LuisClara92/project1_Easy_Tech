@@ -4,12 +4,9 @@ body {
     box-sizing: border-box;
     background-color: #D8D8D8;
     background-image: linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
-    /* width: 100%; */
+    width: 100%;
 
 }
-
-
-
 
 
 
@@ -106,17 +103,28 @@ body {
 
 
 
-
-
 /* ******************************************** LANDING ******************************************** */
 
-#homeBackground {
-    height: 500px;
-    min-height: 100vh;
+/* #homeBackground {
+    margin: 0 auto;
+    box-sizing: border-box;
+    tent: center;
+    align-items: center;
     object-fit: cover;
+    height: 300px;
+    min-height: 10vh;
     padding: 0rem 5rem;
+} */
 
 
+.landing {
+    min-height: 100vh;
+    background: url("/images/Raspberry_Pi_4_Model_B_-_Side.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5rem 55rem;
+    width: fit-content;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -182,13 +190,6 @@ body {
     transform: translateY(100%);
     display: inline-block;
 }
-
-
-
-
-
-
-
 
 
 
