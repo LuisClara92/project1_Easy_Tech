@@ -1,20 +1,13 @@
 body {
-    display: grid;
-    background-color: #fdfdfd;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 2rem;
-    font-size: 16px;
-    font-weight: 400;
     width: 100%;
-    margin: 10px auto;
 }
 h1{
     font-family: 'Mukta', sans-ser;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
     padding-bottom: 20px;
-    /* margin-left: 32px; */
+    margin-left: 32px;
     font-size: 28px;
-    width: 75%;
+    width: 60%;
     margin: 50px auto 0 auto;
     
 }
@@ -24,14 +17,13 @@ h2{
     font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
-    width: 75%;
+    width: 60%;
     margin: 30px auto 0 auto;
 }
 h3{
     position: relative;
     font-family: 'Mukta', sans-ser;
     font-size: 20px;
-    margin-top: 0;
 }
 .aboutUsTitle{
     margin-bottom: 30px;
@@ -40,9 +32,10 @@ h3{
     display: inline-flex;
     line-height: 2rem;
     font-weight: 400;
-    width: 75%;
+    width: 60%;
     margin: 0 auto 30px auto;
     text-align: justify;
+    justify-content: center;
 }
 #contentThink{
     font-size: 20px;
@@ -87,16 +80,16 @@ h3{
         transform: translate3d(0px, 0px, 0px);
     }
 }
-#content{
+.content{
     font-family: 'Quicksand', sans-serif;
     line-height: 2rem;
     font-size: 16px;
     font-weight: 400;
-    width: 75%; 
+    width: 60%; 
     margin: 0 auto 0 auto;
     text-align: justify;
 }
-#content p{
+.content p{
     margin-top: 20px;
 }
 
@@ -105,7 +98,7 @@ h3{
 #contact{
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid rgba(0, 0, 0, .4);
     margin-bottom:40px
 }
     /*style form*/
@@ -226,23 +219,15 @@ button.btn{
     background-color: #cecece
 }
 
-#navReference,
-#footerReference {
-    width: 100%;
-}
-
-
-
 /* ********************************** MEDIA QUERIES********************************** */
 @media screen and (max-width: 1230px) {
     .content{
-        width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
+        width: 60%;
+       
     }
     
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .content{
         width: 90%;
         margin-left: 50px;
@@ -268,15 +253,34 @@ button.btn{
     #cName{
         float:none;
     }
-    /* #userSign p{
-        width: 100%;
-    } */
+    fieldset#userSign {
+        background: none;
+    }
+    fieldset#userLog {
+        background: none;
+    }
+    fieldset#message {
+        background: none;
+    }
+    input#cName{
+        width: 61.5%;
+    }
+    input#cEmail{
+        width: 61.5%;
+    }
+    input#cPass{
+        width: 61.5%;
+    }
+    input#cSubject{
+        width: 61.5%;
+    }
+    
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
     .content{
         width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .contact{
         width: 75%;
@@ -286,4 +290,43 @@ button.btn{
         width: 50%;
         margin-left:30px;
     }
+    input#cName{
+        width: 64.5%;
+    }
+    input#cEmail{
+        width: 64.5%;
+    }
+    input#cPass{
+        width: 64.5%;
+    }
+    input#cSubject{
+        width: 64.5%;
+    }
+
+               
+}
+@media screen and (max-width: 425px) {
+    input#cName{
+        width: 99.5%;
+        margin-left:0;
+    }
+    input#cEmail{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    input#cPass{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    input#cSubject{
+        width: 99.5%;
+        margin-left:0;
+
+    }
+    textarea#cMsg{
+        width: 100%;
+    }
+               
 }
