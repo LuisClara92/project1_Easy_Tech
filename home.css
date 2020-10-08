@@ -5,7 +5,7 @@
 }
 
 *{ margin:0;padding:0; box-sizing:border-box;
-     font-family: Ubuntu, sans-serif}
+     font-family: 'Mukta', sans-serif}
 
 
 .header{
@@ -35,7 +35,7 @@
     font-size: 30px;
     width: auto;
     height: inherit;
-    color:rgb(0, 0, 0);
+    color:rgb(56, 56, 56);
     position:absolute;
     top:50%;
     left:50%;
