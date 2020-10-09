@@ -1,8 +1,4 @@
-
-#navReference,
-#footerReference {
-    width: 100%;
-}
+/* 
 body p{
     width: 100%;
     background-color: #D8D8D8;
@@ -11,7 +7,7 @@ body p{
     line-height: 2rem;
     font-size: 16px;
     font-weight: 400;
-}
+} */
 h1{
     font-family: 'Mukta', sans-serif;
     width: 100%;
@@ -25,7 +21,7 @@ h2{
     margin-bottom: 15px;
 }
 div.carousel-inner img{
-    height: 800px;
+    height: 1000px;
     margin-bottom: auto;
 }
 
