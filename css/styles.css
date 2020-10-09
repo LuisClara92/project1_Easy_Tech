@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-family: 'Mukta', sans-ser;
-    width: 100%;
+    /* width: 100%; */
     text-align: left;
     font-size: 28px;
     text-shadow: 1px 1px 1px #a0a0a0;
@@ -138,6 +138,7 @@ h2 {
 
 /* ********************************************* FOOTER STYLES *********************************************   */
 
+<<<<<<< HEAD
 .footer {
     margin: 0;
     padding: 0;
@@ -149,15 +150,33 @@ h2 {
     bottom: 0px;
     width: 100%;
     background: black;
+=======
+.footer{
+    margin:0;
+    padding:0;
+    /* color:white; */
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:10px;
+    bottom: 0px;
+    width:100%;
+    background:rgb(155, 155, 155);
+    opacity: 0.7;
+>>>>>>> ef0faa29863553809f7b557799c23565f1024330
 }
 
 .inner_footer {
     display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 
 .inner_footer .box {
     flex-basis: 50%;
     padding: 10px 20px;
+    margin:10px
 }
 
 .box h1 {
@@ -175,8 +194,23 @@ h2 {
 .box .conteiner li {
     list-style-type: none;
     display: inline;
+    text-align: center;
 }
 
+@media screen and (max-width:700px) {
+    .inner_footer {
+        flex-direction: column;
+    }
+    .box .conteiner{
+        margin:20px 0 0 0;
+        line-height:20px;
+        text-align: center;}
+
+    .inner_footer h1 {
+        text-align: center;
+
+    }
+}
 
 
 /* ********************************** MEDIA QUERIES********************************** */
