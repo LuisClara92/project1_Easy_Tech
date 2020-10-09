@@ -7,7 +7,8 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-h1{
+
+h1 {
     font-family: 'Mukta', sans-ser;
     width: 100%;
     text-align: left;
@@ -15,7 +16,8 @@ h1{
     text-shadow: 1px 1px 1px #a0a0a0;
 
 }
-h2{
+
+h2 {
     position: relative;
     font-family: 'Mukta', sans-ser;
     font-size: 24px;
@@ -31,17 +33,19 @@ h2{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
-.navContainer a{
+
+.navContainer a {
     color: #000000
 }
+
 .navContainer a:link {
     text-decoration: none;
 }
-  
+
 .navContainer a:visited {
     text-decoration: none;
 }
-  
+
 .navContainer a:hover {
     text-decoration: underline;
 }
@@ -134,36 +138,41 @@ h2{
 
 /* ********************************************* FOOTER STYLES *********************************************   */
 
-.footer{
-    margin:0;
-    padding:0;
-    color:white;
+.footer {
+    margin: 0;
+    padding: 0;
+    color: white;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-size:10px;
-    position:fixed; 
+    font-size: 10px;
+    position: fixed;
     bottom: 0px;
-    width:100%;
+    width: 100%;
     background: black;
 }
-.inner_footer{
+
+.inner_footer {
     display: flex;
 }
-.inner_footer .box{
+
+.inner_footer .box {
     flex-basis: 50%;
     padding: 10px 20px;
 }
-.box h1{
+
+.box h1 {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.box .conteiner{
-    margin:20px 0 0 0;
-    line-height:20px;
+
+.box .conteiner {
+    margin: 20px 0 0 0;
+    line-height: 20px;
     text-align: justify;
 }
-.box .conteiner li{
+
+.box .conteiner li {
     list-style-type: none;
     display: inline;
 }
@@ -279,8 +288,9 @@ h2{
         margin: 5px 12px;
         font-size: 12px;
     }
+
     .inner_footer {
-        width:80%;
+        width: 80%;
     }
 }
 
@@ -313,8 +323,27 @@ h2{
         margin: 5px 4px;
         font-size: 12px;
     }
+
     .inner_footer {
-        width:90%;
+        width: 90%;
         flex-direction: column;
+    }
+}
+
+
+/* ********************************** MEDIA QUERIES********************************** */
+
+@media screen and (max-width: 400px) {
+    .easyTechLogo {
+        display: none;
+    }
+
+    .EasyTechFlyingLogo img {
+        display: none;
+    }
+
+    .navMenu li {
+        margin: 5px 5px;
+        font-size: 12px;
     }
 }

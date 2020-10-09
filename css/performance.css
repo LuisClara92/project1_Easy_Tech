@@ -1,14 +1,22 @@
 body {
     width: 100%;
-    
+
 }
-h1{
+
+.sectionContainer {
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+h1 {
     font-family: 'Mukta', sans-serif;
     font-size: 28px;
     margin: 60px 0 25px 0;
 }
 
-h2{
+h2 {
     position: relative;
     font-family: 'Mukta', sans-ser;
     font-size: 24px;
@@ -17,42 +25,42 @@ h2{
     width: 60%;
     margin: 30px auto 0 auto;
 }
-h3{
+
+h3 {
     position: relative;
     font-family: 'Mukta', sans-ser;
     font-size: 20px;
 }
 
-.sectionContainer{
-    font-family: 'Quicksand', sans-serif;
-    width: 60%;
-    text-align: left;
-    margin: 0 auto;
-}
 
 /* ********************************** NEW IMAGE TRY********************************** */
-.graficConteiner{
+.graficConteiner {
     width: 100%;
     margin-top: 30px;
+    margin: 0 auto;
 }
 
 .img {
     border-radius: 2px;
     box-shadow: 0 0 5px #343436;
-    filter:brightness(1.1);
+    filter: brightness(1.1);
     height: 150px;
     width: 200px;
 }
+
 .img:target {
     height: 450px;
     width: 500px;
 }
+
 .img:target+.close {
     display: block;
 }
-.img:target+.close+.expand{
+
+.img:target+.close+.expand {
     display: none;
 }
+
 .close {
     background-image: url(https://bit.ly/29QeT21);
     background-repeat: no-repeat;
@@ -60,17 +68,19 @@ h3{
     display: none;
     height: 32px;
     left: 462px;
-    margin-top: -32px;  
+    margin-top: -32px;
     position: relative;
     width: 32px;
 }
-.expand{
+
+.expand {
     bottom: 125px;
     margin-left: -32px;
     margin-right: 16px;
     pointer-events: none;
     position: relative;
 }
+
 #wrapper {
     margin: auto;
     padding: 10px;
@@ -80,23 +90,24 @@ h3{
 
 /* ********************************** TABLE********************************** */
 table#tablePerformance {
-    font-family: 'Quicksand', sans-serif;;
+    font-family: 'Quicksand', sans-serif;
     border-spacing: 0px;
     margin-top: 75px;
     margin-left: auto;
     margin-right: auto;
     word-wrap: break-word;
     width: 75%;
-    
+
 }
+
 table#tablePerformance td {
     padding: 10px;
     text-align: flex-start;
     vertical-align: middle;
-    
 }
+
 table#tablePerformance td.ce {
-    border-right: 1px solid #606060;  
+    border-right: 1px solid #606060;
     vertical-align: top;
     font-weight: bold;
     width: 150px;
@@ -106,7 +117,8 @@ table#tablePerformance caption {
     font-size: 16px;
     font-weight: bolder;
 }
-table#tablePerformance caption span{
+
+table#tablePerformance caption span {
     display: block;
     float: right;
     font-size: 10px;
@@ -115,12 +127,13 @@ table#tablePerformance caption span{
 
 /* ********************************** BOTTOM COLUMNS ****************************************** */
 
-.container-column{
+.container-column {
     text-align: center;
     margin: 0 auto;
     width: 100%;
 }
-.column{
+
+.column {
     justify-content: center;
     align-items: center;
     float: left;
@@ -129,25 +142,31 @@ table#tablePerformance caption span{
     margin-left: 10px;
     margin-bottom: 75px;
 }
-#contentSoftware{
+
+#contentSoftware {
     margin-bottom: 75px;
 }
-.contentSoftwarePanel{
-    line-height:20px;
+
+.contentSoftwarePanel {
+    line-height: 20px;
 }
+
 #contentHardware {
     font-family: 'Mukta', sans-serif;
     font-size: 16px;
     text-align: center;
     padding-bottom: 10px;
 }
-.contentHardwarePanel p{
-    padding-bottom:20px;
+
+.contentHardwarePanel p {
+    padding-bottom: 20px;
 }
-.container-column:after{
+
+.container-column:after {
     clear: both;
 }
-.content-inline{
+
+.content-inline {
     display: flex;
     font-size: 16px;
     padding: 10px;
@@ -156,100 +175,138 @@ table#tablePerformance caption span{
     margin: 0 auto 75px auto;
     border-top: 1px solid #000000;
 }
-.content-inline p{
-    margin:10px;
+
+.content-inline p {
+    margin: 10px;
     padding-left: 20px;
     justify-content: space-between;
 }
 
-#navReference,
+/* #navReference,
 #footerReference {
     width: 100%;
-}
+} */
 
 /* ********************************** MEDIA QUERIES********************************** */
 
 @media screen and (max-width: 1470px) {
-    body{
+    body {
         width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
+        /* margin-left: 50px;
+        margin-right: 50px; */
     }
-    
+
 }
 
 @media screen and (max-width: 1100px) {
-    section.sectionContainer{
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
+
+    .navContainer {
+        width: 90%;
+    }
+
+    .sectionContainer {
+        width: 90%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 40px 0 25px 0;
 
     }
 }
+
 @media screen and (max-width: 768px) {
-    body{
-        width: 90%;
-        margin-left: 10px;
-        margin-right: auto;
+    body {
+        width: 100%;
+        /* margin-left: 10px; */
+        /* margin-right: auto; */
+        margin: 0 auto;
     }
+
+    .navContainer {
+        width: 100%;
+
+    }
+
 }
+
 @media screen and (max-width: 555px) {
-  
-    div.column{
+
+    .navContainer {
+        width: 100%;
+    }
+
+    div.column {
         width: 100%;
         margin-top: 0;
         margin-left: 10px;
         margin-right: 10px;
     }
-    table#tablePerformance{
+
+    table#tablePerformance {
         width: 100%;
         margin-left: 50px;
 
     }
 }
+
 @media screen and (max-width: 425px) {
-    body{
+    /* body {
         width: 100%;
         margin-left: 50px;
         margin-right: 50px;
+    } */
+
+    .navContainer {
+        width: 100%;
     }
-    div.container-column{
+
+    div.container-column {
         width: 100%;
         margin-left: 10px;
         margin-right: auto;
     }
-    div#wrapper{
+
+    div#wrapper {
         align-items: flex-start;
-        margin-left:0;
-        margin-right:30px;
+        margin-left: 0;
+        margin-right: 30px;
     }
-    table#tablePerformance{
+
+    table#tablePerformance {
         width: 100%;
         margin-left: 50px;
 
     }
 }
+
 @media screen and (max-width: 375px) {
-    body{
+    body {
         width: 100%;
-        margin-left: 50px;
-        margin-right: 50px;
+        /* margin-left: 20px; */
+        /* margin-right: 20px; */
     }
-    
-    div.container-column{
+
+    div.container-column {
         width: 100%;
         margin-left: 50px;
         margin-right: auto;
     }
-    table#tablePerformance{
+
+    table#tablePerformance {
         width: 100%;
         margin-left: 50px;
 
     }
+
     h3#contentThink {
-        margin-left:10px;
+        margin-left: 10px;
     }
-    div.content-inline{
+
+    div.content-inline {
         width: 100%;
         margin-left: 30px;
     }
