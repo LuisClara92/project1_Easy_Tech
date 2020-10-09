@@ -1,0 +1,801 @@
+    body {
+        width: 100%;
+        background-color: #D8D8D8;
+        background-image: linear-gradient(90deg, #F4F4F4 0%, #FFFFFF 50%, #F4F4F4 100%);
+    }
+
+
+
+    /* #################################### NAV #################################### */
+
+    .navContainer {
+        width: 75%;
+        overflow: hidden;
+        margin: auto auto;
+
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+
+
+    .easyTechLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 100px;
+        margin: 20px 30px 15px 30px;
+    }
+
+    #easyTechImage {
+        width: 50%;
+    }
+
+    #easyTechMoto {
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    .navMenu {
+        float: right;
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .navMenu ul {
+        margin: 25px 25px 25px 8px;
+    }
+
+    .navMenu li {
+        display: inline-block;
+        text-align: center;
+        margin: 8px 15px;
+        text-decoration: none;
+    }
+
+
+    .navMenu li:hover {
+        text-shadow: 1px 1px 2px #ccc;
+        cursor: pointer;
+    }
+
+
+    /* ********************************************* ANIMATED LOGO *********************************************   */
+
+    .EasyTechFlyingLogo {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: EasyTechFlyingLogoAnimation 6s ease-in-out infinite;
+    }
+
+    @keyframes EasyTechFlyingLogoAnimation {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        25% {
+            transform: translate3d(3px, -2px, -2px);
+        }
+
+        50% {
+            transform: translate3d(-2px, 3px, -2px);
+        }
+
+        75% {
+            transform: translate3d(-2px, -2px, 3px);
+        }
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
+
+
+
+
+
+
+
+    /* ********************************************* HEADER  *********************************************   */
+
+    .headerImage {
+        width: 100vw;
+        height: 90vh;
+        background: url("/images/headerBackground.png");
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 2px 2px 2px #0034e1;
+
+    }
+
+    .headerText {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 35%;
+        left: 39%;
+        font-family: 'Mukta', sans-serif;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 90px;
+        text-align: justify;
+        color: #000000;
+    }
+
+
+
+
+
+
+
+
+    /* ********************************************* CONTENT  *********************************************   */
+
+    .contentContainer {
+        display: grid;
+        grid-template-rows: repeat(3, auto-fit);
+        grid-template-columns: 50% 50%;
+        grid-gap: 2%;
+        justify-items: center;
+        justify-content: space-evenly;
+        margin: 10% 15%;
+    }
+
+    .contentMainTopic {
+        grid-area: 1 / 1 / 1 / 3;
+        padding: 30px;
+        line-height: 2rem;
+
+    }
+
+
+    .overviewMainIcon {
+        width: 270px;
+        opacity: 0.5;
+        float: right;
+        margin: 10px;
+    }
+
+
+    .contentContainer h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        text-align: left;
+        color: #282828;
+        padding: 1%;
+    }
+
+    .contentContainer span {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.0rem;
+        line-height: 1.7rem;
+        text-align: justify;
+        padding: 1%;
+    }
+
+
+    .overviewIcons {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        float: left;
+        margin: 15px;
+        /* image-shadow: blue 5px 5px 5px; */
+        text-shadow: blue 5px 5px 5px;
+        ;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* ********************************** CAROUSEL ********************************** */
+
+    /* @keyframes tonext {
+        75% {
+            left: 0;
+        }
+
+        95% {
+            left: 100%;
+        }
+
+        98% {
+            left: 100%;
+        }
+
+        99% {
+            left: 0;
+        }
+    }
+
+    @keyframes tostart {
+        75% {
+            left: 0;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        98% {
+            left: -300%;
+        }
+
+        99% {
+            left: 0;
+        }
+    }
+
+    @keyframes snap {
+        96% {
+            scroll-snap-align: center;
+        }
+
+        97% {
+            scroll-snap-align: none;
+        }
+
+        99% {
+            scroll-snap-align: none;
+        }
+
+        100% {
+            scroll-snap-align: center;
+        }
+    }
+
+    .carousel {
+        max-width: 70rem;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+        font-family: 'Lato', sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0px;
+    }
+
+    *::-webkit-scrollbar {
+        width: 0;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+
+    * {
+        -ms-overflow-style: none;
+    }
+
+    ol,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .carousel {
+        position: relative;
+        padding-top: 75%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+    }
+
+    .carousel__viewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel__slide {
+        position: relative;
+        flex: 0 0 100%;
+        width: 100%;
+        background-color: #f99;
+        counter-increment: item;
+    }
+
+    .carousel__slide:nth-child(even) {
+        background-color: #99f;
+    }
+
+    .carousel__slide:before {
+        content: counter(item);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -40%, 70px);
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .carousel__snapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+    }
+
+    @media (hover: hover) {
+        .carousel__snapper {
+            animation-name: tonext, snap;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .carousel__slide:last-child .carousel__snapper {
+            animation-name: tostart, snap;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .carousel__snapper {
+            animation-name: none;
+        }
+    }
+
+    .carousel:hover .carousel__snapper,
+    .carousel:focus-within .carousel__snapper {
+        animation-name: none;
+    }
+
+    .carousel__navigation {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .carousel__navigation-list,
+    .carousel__navigation-item {
+        display: inline-block;
+    }
+
+    .carousel__navigation-button {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #333;
+        background-clip: content-box;
+        border: 0.25rem solid transparent;
+        border-radius: 50%;
+        font-size: 0;
+        transition: transform 0.1s;
+    }
+
+    .carousel::before,
+    .carousel::after,
+    .carousel__prev,
+    .carousel__next {
+        position: absolute;
+        top: 0;
+        margin-top: 37.5%;
+        width: 4rem;
+        height: 4rem;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        font-size: 0;
+        outline: 0;
+    }
+
+    .carousel::before,
+    .carousel__prev {
+        left: -1rem;
+    }
+
+    .carousel::after,
+    .carousel__next {
+        right: -1rem;
+    }
+
+    .carousel::before,
+    .carousel::after {
+        content: '';
+        z-index: 1;
+        background-color: #333;
+        background-size: 1.5rem 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .carousel::before {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+    }
+
+    .carousel::after {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+    } */
+
+
+
+    /* ********************************** FOOTER ********************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 2560px) {
+        .headerText {
+            top: 35%;
+            left: 40%;
+            font-size: 50px;
+            line-height: 110px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 2000px) {
+        .headerText {
+            top: 35%;
+            left: 39%;
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 90px;
+        }
+    }
+
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 1440px) {
+        .headerImage {
+            height: 80vh;
+            background-position: 70%;
+        }
+
+        .headerText {
+            font-size: 42px;
+            left: 35%;
+            font-weight: 800;
+            line-height: 90px;
+        }
+    }
+
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 1200px) {
+        .headerImage {
+            height: 70vh;
+            background-position: 70%;
+        }
+
+
+        .headerText {
+            top: 35%;
+            left: 32%;
+            font-size: 32px;
+            line-height: 70px;
+        }
+
+        .contentContainer {
+            margin: 10% 10%;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 1024px) {
+
+        .navContainer {
+            width: 80%;
+        }
+
+        .navMenu li {
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+
+        .headerImage {
+            height: 55vh;
+            background-position: 75%;
+        }
+
+        .headerText {
+            top: 38%;
+            left: 38%;
+            font-size: 25px;
+            line-height: 70px;
+        }
+
+        .contentContainer {
+            margin: 8% 5%;
+        }
+    }
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 910px) {
+
+        .navContainer {
+            width: 85%;
+        }
+
+        .navMenu li {
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+
+        .easyTechLogo {
+            margin: 25px 0 0 25px;
+        }
+
+        .headerImage {
+            height: 50vh;
+            background-position: 75%;
+        }
+
+        .headerText {
+            top: 36%;
+            left: 39%;
+            font-size: 22px;
+            line-height: 50px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 780px) {
+        .navMenu li {
+            margin: 5px 5px;
+            font-size: 12px;
+        }
+
+        .easyTechLogo {
+            width: 80px;
+            margin: 15px 0 0 25px;
+        }
+
+        .headerImage {
+            height: 40vh;
+            background-position: 75%;
+        }
+
+
+        .headerText {
+            top: 38%;
+            left: 36%;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+
+        .contentContainer {
+            margin: 8% 5%;
+        }
+
+        .overviewMainIcon {
+            width: 170px;
+            margin: 10px;
+        }
+
+        .contentContainer h3 {
+            font-size: 1.2rem;
+            line-height: 2.7rem;
+        }
+
+        .contentContainer span {
+            font-size: 0.8rem;
+            line-height: 1.7rem;
+            padding: 1%;
+        }
+
+        .overviewIcons {
+            width: 70px;
+            height: 70px;
+        }
+
+    }
+
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 675px) {
+        .navContainer {
+            width: 90%;
+        }
+
+        .EasyTechFlyingLogo {
+            width: 80%;
+
+        }
+
+        .easyTechLogo {
+            width: 70px;
+            margin: 16px 0 0 20px;
+        }
+
+        .navMenu li {
+            margin: 5px 5px;
+            font-size: 12px;
+        }
+
+
+        .headerImage {
+            height: 38vh;
+        }
+
+        .headerText {
+            top: 38%;
+            left: 36%;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    /* ********************************** MEDIA QUERIES ********************************** */
+
+    @media screen and (max-width: 600px) {
+
+        .navContainer {
+            width: 100%;
+        }
+
+        #easyTechMoto {
+            display: none;
+        }
+
+        .easyTechLogo {
+            width: 40px;
+            margin: 15px 5px 8px 15px;
+        }
+
+        .EasyTechFlyingLogo img {
+            width: 100%;
+        }
+
+        .navMenu ul {
+            margin: 15px 6px;
+        }
+
+        .navMenu li {
+            margin: 5px 12px;
+            font-size: 12px;
+        }
+
+        .headerText {
+            top: 38%;
+            left: 33%;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+        .contentContainer {
+            margin: 6% 4%;
+        }
+
+        .overviewMainIcon {
+            width: 140px;
+        }
+
+        .overviewIcons {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        /* ********************************** MEDIA QUERIES ********************************** */
+
+        @media screen and (max-width: 501px) {
+
+            .navContainer {
+                width: 100%;
+            }
+
+            #easyTechMoto {
+                display: none;
+            }
+
+            .easyTechLogo {
+                width: 40px;
+                margin: 15px 5px 8px 15px;
+            }
+
+            .EasyTechFlyingLogo img {
+                width: 100%;
+            }
+
+            .navMenu ul {
+                margin: 15px 2px;
+            }
+
+            .navMenu li {
+                margin: 5px 3px;
+                font-size: 12px;
+            }
+
+
+            .headerText {
+                top: 38%;
+                left: 30%;
+                font-size: 12px;
+                line-height: 35px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ********************************** MEDIA QUERIES ********************************** */
+
+        /* @media screen and (max-width: 600px) {
+        .inner_footer {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .inner_footer {
+            width: 90%;
+            flex-direction: column;
+        }
+    } */
