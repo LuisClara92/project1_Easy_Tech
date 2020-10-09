@@ -46,7 +46,8 @@ div.carousel-inner img{
     border:medium none;
     padding:50px!important;
     border-radius: 3px;
-    transition: 0.3s;}
+    transition: 0.3s;
+}
     
 .row h2{
     font-size: 24px;
@@ -66,11 +67,11 @@ div.row{
         height: 700px;
     }
 }
-@media screen and (max-width:1000px) {
+/* @media screen and (max-width:1000px) {
     div.row{
         ;
     }
-}
+} */
 @media screen and (max-width:768px) {
     div.carousel-inner img {
         height: 500px;
