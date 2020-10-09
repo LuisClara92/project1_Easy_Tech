@@ -141,9 +141,9 @@
 
     .contentContainer {
         display: grid;
-        grid-template-rows: repeat(3, 30vh);
+        grid-template-rows: repeat(3, auto-fit);
         grid-template-columns: 50% 50%;
-        grid-gap: 7%;
+        grid-gap: 2%;
         justify-items: center;
         justify-content: space-evenly;
         margin: 10% 15%;
@@ -151,12 +151,14 @@
 
     .contentMainTopic {
         grid-area: 1 / 1 / 1 / 3;
-        padding: 10px;
-        margin: 0 10%;
+        padding: 30px;
+        line-height: 2rem;
+
     }
 
-    .contentMainTopicIcon {
-        width: 200px;
+
+    .overviewMainIcon {
+        width: 270px;
         opacity: 0.5;
         float: right;
         margin: 10px;
@@ -181,11 +183,15 @@
     }
 
 
-    .computerMockUpOverview {
+    .overviewIcons {
         width: 100px;
+        height: 100px;
         opacity: 0.5;
-        float: right;
-        margin: 10px;
+        float: left;
+        margin: 15px;
+        /* image-shadow: blue 5px 5px 5px; */
+        text-shadow: blue 5px 5px 5px;
+        ;
     }
 
 
@@ -304,6 +310,10 @@
             font-size: 32px;
             line-height: 70px;
         }
+
+        .contentContainer {
+            margin: 10% 10%;
+        }
     }
 
     /* ********************************** MEDIA QUERIES ********************************** */
@@ -330,7 +340,12 @@
             font-size: 25px;
             line-height: 70px;
         }
+
+        .contentContainer {
+            margin: 8% 5%;
+        }
     }
+
 
     /* ********************************** MEDIA QUERIES ********************************** */
 
@@ -387,6 +402,33 @@
             font-size: 18px;
             line-height: 40px;
         }
+
+
+        .contentContainer {
+            margin: 8% 5%;
+        }
+
+        .overviewMainIcon {
+            width: 170px;
+            margin: 10px;
+        }
+
+        .contentContainer h3 {
+            font-size: 1.2rem;
+            line-height: 2.7rem;
+        }
+
+        .contentContainer span {
+            font-size: 0.8rem;
+            line-height: 1.7rem;
+            padding: 1%;
+        }
+
+        .overviewIcons {
+            width: 70px;
+            height: 70px;
+        }
+
     }
 
 
@@ -461,48 +503,59 @@
             font-size: 14px;
             line-height: 40px;
         }
-    }
 
-
-
-    /* ********************************** MEDIA QUERIES ********************************** */
-
-    @media screen and (max-width: 501px) {
-
-        .navContainer {
-            width: 100%;
+        .contentContainer {
+            margin: 6% 4%;
         }
 
-        #easyTechMoto {
-            display: none;
+        .overviewMainIcon {
+            width: 140px;
         }
 
-        .easyTechLogo {
+        .overviewIcons {
             width: 40px;
-            margin: 15px 5px 8px 15px;
-        }
-
-        .EasyTechFlyingLogo img {
-            width: 100%;
-        }
-
-        .navMenu ul {
-            margin: 15px 2px;
-        }
-
-        .navMenu li {
-            margin: 5px 3px;
-            font-size: 12px;
+            height: 40px;
         }
 
 
-        .headerText {
-            top: 38%;
-            left: 30%;
-            font-size: 12px;
-            line-height: 35px;
+        /* ********************************** MEDIA QUERIES ********************************** */
+
+        @media screen and (max-width: 501px) {
+
+            .navContainer {
+                width: 100%;
+            }
+
+            #easyTechMoto {
+                display: none;
+            }
+
+            .easyTechLogo {
+                width: 40px;
+                margin: 15px 5px 8px 15px;
+            }
+
+            .EasyTechFlyingLogo img {
+                width: 100%;
+            }
+
+            .navMenu ul {
+                margin: 15px 2px;
+            }
+
+            .navMenu li {
+                margin: 5px 3px;
+                font-size: 12px;
+            }
+
+
+            .headerText {
+                top: 38%;
+                left: 30%;
+                font-size: 12px;
+                line-height: 35px;
+            }
         }
-    }
 
 
 
@@ -520,9 +573,9 @@
 
 
 
-    /* ********************************** MEDIA QUERIES ********************************** */
+        /* ********************************** MEDIA QUERIES ********************************** */
 
-    /* @media screen and (max-width: 600px) {
+        /* @media screen and (max-width: 600px) {
         .inner_footer {
             width: 80%;
         }
